@@ -1,0 +1,427 @@
+{
+	"version": 2,
+	"saved_at": "2026-10-10T13:13:20",
+	"summary": {
+		"day": 3,
+		"time": "15:30",
+		"money": 212,
+		"playtime": 5400
+	},
+	"systems": {
+		"clock": {
+			"day": 3,
+			"minute": 930
+		},
+		"weather": {
+			"seed": 3041,
+			"state": 0
+		},
+		"inventory": {
+			"stacks": [
+				{
+					"slot": 0,
+					"id": "carrot",
+					"count": 8
+				},
+				{
+					"slot": 1,
+					"id": "wheat",
+					"count": 14
+				},
+				{
+					"slot": 2,
+					"id": "egg",
+					"count": 5
+				},
+				{
+					"slot": 3,
+					"id": "seed_wheat",
+					"count": 6
+				},
+				{
+					"slot": 4,
+					"id": "milk",
+					"count": 1
+				}
+			]
+		},
+		"economy": {
+			"money": 212,
+			"ledger": [
+				{
+					"day": 1,
+					"amount": -6,
+					"reason": "Built the fence",
+					"balance": 114
+				},
+				{
+					"day": 1,
+					"amount": -6,
+					"reason": "Built the fence",
+					"balance": 108
+				},
+				{
+					"day": 1,
+					"amount": -6,
+					"reason": "Built the fence",
+					"balance": 102
+				}
+			]
+		},
+		"shop": {
+			"sold": {},
+			"unlocked": []
+		},
+		"build": [
+			{
+				"id": "fence",
+				"cell": [
+					-12,
+					3
+				],
+				"turns": 0
+			},
+			{
+				"id": "fence",
+				"cell": [
+					-10,
+					3
+				],
+				"turns": 0
+			},
+			{
+				"id": "fence",
+				"cell": [
+					-8,
+					3
+				],
+				"turns": 0
+			}
+		],
+		"farmer": {
+			"position": [
+				-2.5,
+				0.0,
+				7.5
+			],
+			"yaw": 1.571
+		},
+		"animal/Chicken_1": {
+			"position": [
+				-18.2,
+				0.0,
+				-0.6
+			],
+			"yaw": 0.524,
+			"fed": true,
+			"days_fed": 0,
+			"product": []
+		},
+		"animal/Chicken_2": {
+			"position": [
+				-17.9,
+				0.0,
+				1.0
+			],
+			"yaw": 2.094,
+			"fed": false,
+			"days_fed": 0,
+			"product": [
+				-17.0,
+				0.0,
+				-3.5
+			]
+		},
+		"animal/Chicken_3": {
+			"position": [
+				-19.6,
+				0.0,
+				1.6
+			],
+			"yaw": -1.92,
+			"fed": false,
+			"days_fed": 0,
+			"product": []
+		},
+		"animal/Cow_1": {
+			"position": [
+				-17.0,
+				0.0,
+				15.3
+			],
+			"yaw": 1.571,
+			"fed": false,
+			"days_fed": 0,
+			"product": []
+		},
+		"animal/Cow_2": {
+			"position": [
+				-11.5,
+				0.0,
+				15.3
+			],
+			"yaw": -1.571,
+			"fed": false,
+			"days_fed": 0,
+			"product": []
+		},
+		"animal/Dog_1": {
+			"position": [
+				-6.0,
+				0.0,
+				-7.5
+			],
+			"yaw": -2.793,
+			"fed": false,
+			"days_fed": 0,
+			"product": []
+		},
+		"can": {
+			"level": 4
+		},
+		"plot/Plot_0_0": {
+			"state": 3,
+			"crop": "wheat",
+			"stage": 2,
+			"days_watered": 0
+		},
+		"plot/Plot_0_1": {
+			"state": 3,
+			"crop": "pumpkin",
+			"stage": 1,
+			"days_watered": 0
+		},
+		"plot/Plot_0_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_0_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_0_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_1_0": {
+			"state": 3,
+			"crop": "wheat",
+			"stage": 2,
+			"days_watered": 0
+		},
+		"plot/Plot_1_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_1_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_1_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_1_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_2_0": {
+			"state": 2,
+			"crop": "carrot",
+			"stage": 1,
+			"days_watered": 0
+		},
+		"plot/Plot_2_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_2_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_2_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_2_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_3_0": {
+			"state": 4,
+			"crop": "carrot",
+			"stage": 3,
+			"days_watered": 0
+		},
+		"plot/Plot_3_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_3_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_3_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_3_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_4_0": {
+			"state": 1,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_4_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_4_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_4_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_4_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_5_0": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_5_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_5_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_5_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_5_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_6_0": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_6_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_6_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_6_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_6_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_7_0": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_7_1": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_7_2": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_7_3": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"plot/Plot_7_4": {
+			"state": 0,
+			"crop": "",
+			"stage": 0,
+			"days_watered": 0
+		},
+		"tools": {
+			"current": "can",
+			"crop": "carrot"
+		}
+	}
+}
