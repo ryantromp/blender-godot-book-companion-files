@@ -1,0 +1,496 @@
+[gd_scene format=3 uid="uid://dcfw2jtes2o56"]
+
+[ext_resource type="PackedScene" uid="uid://cuqrckoifwj8e" path="res://scenes/props/prop_crate_small.tscn" id="1_prop_c"]
+[ext_resource type="PackedScene" uid="uid://cjyd0p2e0qqeb" path="res://assets/models/prop_crate_large.glb" id="2_prop_c"]
+[ext_resource type="PackedScene" uid="uid://c2mkiiwsvfigp" path="res://assets/models/prop_barrel.glb" id="3_prop_b"]
+[ext_resource type="PackedScene" uid="uid://crienr0luru8t" path="res://assets/models/prop_bucket.glb" id="4_prop_b"]
+[ext_resource type="PackedScene" uid="uid://b1vitd3xnw7cp" path="res://assets/models/prop_sack.glb" id="5_prop_s"]
+[ext_resource type="PackedScene" uid="uid://b8xriwhoy61bp" path="res://assets/models/prop_hay_bale.glb" id="6_prop_h"]
+[ext_resource type="PackedScene" uid="uid://drulod0ldk4jn" path="res://assets/models/prop_trough.glb" id="7_prop_t"]
+[ext_resource type="PackedScene" uid="uid://ba7jdexhbq78d" path="res://assets/models/prop_lantern.glb" id="8_prop_l"]
+[ext_resource type="PackedScene" uid="uid://x1jriwrjdm2j" path="res://assets/models/prop_sign_post.glb" id="9_prop_s"]
+[ext_resource type="PackedScene" uid="uid://b7dd8f8s2bagg" path="res://assets/models/prop_sign_hang.glb" id="10_prop_s"]
+[ext_resource type="PackedScene" uid="uid://p1ny0ik3vtes" path="res://assets/models/tool_hoe.glb" id="11_tool_h"]
+[ext_resource type="PackedScene" uid="uid://dfcy0eaex3gh3" path="res://assets/models/tool_watering_can.glb" id="12_tool_w"]
+[ext_resource type="PackedScene" uid="uid://hfr3v3a57lqt" path="res://assets/models/tool_seed_bag.glb" id="13_tool_s"]
+[ext_resource type="PackedScene" uid="uid://r7g886275p44" path="res://assets/models/kit_door.glb" id="14_kit_do"]
+[ext_resource type="PackedScene" uid="uid://dyel3m2af6pgv" path="res://assets/models/kit_window.glb" id="15_kit_wi"]
+[ext_resource type="PackedScene" uid="uid://dtkwwbnx5d067" path="res://assets/models/fence_post.glb" id="16_fence_"]
+[ext_resource type="PackedScene" uid="uid://dk7ytjj2nst0n" path="res://assets/models/fence_rail.glb" id="17_fence_"]
+[ext_resource type="PackedScene" uid="uid://dttplpdn2qvpn" path="res://assets/models/fence_corner.glb" id="18_fence_"]
+[ext_resource type="PackedScene" uid="uid://co25dnuo8c5u5" path="res://assets/models/fence_gate.glb" id="19_fence_"]
+[ext_resource type="PackedScene" uid="uid://guvfd7vvdvp8" path="res://assets/models/bld_farmhouse.glb" id="20_bld_fa"]
+[ext_resource type="PackedScene" uid="uid://c7ihb8qf8g0yv" path="res://assets/models/bld_barn.glb" id="21_bld_ba"]
+[ext_resource type="PackedScene" uid="uid://ccortme65dlv3" path="res://assets/models/bld_shed.glb" id="22_bld_sh"]
+[ext_resource type="PackedScene" uid="uid://calibso5no0fk" path="res://assets/models/bld_chicken_coop.glb" id="23_bld_ch"]
+[ext_resource type="PackedScene" uid="uid://dflnqxxb2qdqt" path="res://assets/models/bld_well.glb" id="24_bld_we"]
+[ext_resource type="PackedScene" uid="uid://sd2e8x0rfyxk" path="res://assets/models/ter_tile_flat.glb" id="25_ter_ti"]
+[ext_resource type="PackedScene" uid="uid://cko0jj5eescl0" path="res://assets/models/ter_tile_slope.glb" id="26_ter_ti"]
+[ext_resource type="PackedScene" uid="uid://b6a8p4ajhrkx7" path="res://assets/models/ter_tile_corner.glb" id="27_ter_ti"]
+[ext_resource type="PackedScene" uid="uid://dbs741rbr2aom" path="res://assets/models/ter_pond.glb" id="28_ter_po"]
+[ext_resource type="PackedScene" uid="uid://bc0ksayty41mx" path="res://assets/models/path_straight.glb" id="29_path_s"]
+[ext_resource type="PackedScene" uid="uid://c503r6acb5qvn" path="res://assets/models/path_corner.glb" id="30_path_c"]
+[ext_resource type="PackedScene" uid="uid://c8keiutgb78sq" path="res://assets/models/field_plot.glb" id="31_field_"]
+[ext_resource type="PackedScene" uid="uid://d2lovqgqy56al" path="res://assets/models/rock_a.glb" id="32_rock_a"]
+[ext_resource type="PackedScene" uid="uid://ciu42iksnjrpd" path="res://assets/models/rock_b.glb" id="33_rock_b"]
+[ext_resource type="PackedScene" uid="uid://vq6dertreqc2" path="res://assets/models/rock_c.glb" id="34_rock_c"]
+[ext_resource type="PackedScene" uid="uid://8uw5cqtahv4c" path="res://assets/models/cliff_straight.glb" id="35_cliff_"]
+[ext_resource type="PackedScene" uid="uid://cr8y2apo4843a" path="res://assets/models/cliff_corner.glb" id="36_cliff_"]
+[ext_resource type="PackedScene" uid="uid://dtyqcgdtluv6g" path="res://assets/models/tree_oak.glb" id="37_tree_o"]
+[ext_resource type="PackedScene" uid="uid://bfpxpkmfgbt1" path="res://assets/models/tree_pine.glb" id="38_tree_p"]
+[ext_resource type="PackedScene" uid="uid://fxws7w0ptsuj" path="res://assets/models/bush.glb" id="39_bush"]
+[ext_resource type="PackedScene" uid="uid://cruuwrj6hrr3" path="res://assets/models/flower_a.glb" id="40_flower"]
+[ext_resource type="PackedScene" uid="uid://c7f3hqqxmpe3q" path="res://assets/models/flower_b.glb" id="41_flower"]
+[ext_resource type="PackedScene" uid="uid://chy7n8ty5e5yh" path="res://assets/models/flower_c.glb" id="42_flower"]
+[ext_resource type="PackedScene" uid="uid://dwkfj88ikv3ll" path="res://assets/models/grass_tuft.glb" id="43_grass_"]
+[ext_resource type="PackedScene" uid="uid://7ty7wbpnhmc5" path="res://assets/models/crop_carrot_s0.glb" id="44_crop_c"]
+[ext_resource type="PackedScene" uid="uid://ceh83guijafc6" path="res://assets/models/crop_carrot_s1.glb" id="45_crop_c"]
+[ext_resource type="PackedScene" uid="uid://caei4et0nvbiu" path="res://assets/models/crop_carrot_s2.glb" id="46_crop_c"]
+[ext_resource type="PackedScene" uid="uid://dfssivm73i7dv" path="res://assets/models/crop_carrot_s3.glb" id="47_crop_c"]
+[ext_resource type="PackedScene" uid="uid://bsme4slolvwhg" path="res://assets/models/crop_wheat_s0.glb" id="48_crop_w"]
+[ext_resource type="PackedScene" uid="uid://c8p14ft63t88i" path="res://assets/models/crop_wheat_s1.glb" id="49_crop_w"]
+[ext_resource type="PackedScene" uid="uid://dlpia8t3aq3fr" path="res://assets/models/crop_wheat_s2.glb" id="50_crop_w"]
+[ext_resource type="PackedScene" uid="uid://dj4g6jn31xa2l" path="res://assets/models/crop_wheat_s3.glb" id="51_crop_w"]
+[ext_resource type="PackedScene" uid="uid://dis16o0134hqg" path="res://assets/models/crop_pumpkin_s0.glb" id="52_crop_p"]
+[ext_resource type="PackedScene" uid="uid://2uiwbjgvlp30" path="res://assets/models/crop_pumpkin_s1.glb" id="53_crop_p"]
+[ext_resource type="PackedScene" uid="uid://cynl8wort7lj1" path="res://assets/models/crop_pumpkin_s2.glb" id="54_crop_p"]
+[ext_resource type="PackedScene" uid="uid://4th5ialwbjym" path="res://assets/models/crop_pumpkin_s3.glb" id="55_crop_p"]
+[ext_resource type="PackedScene" uid="uid://jlt4317qd7ft" path="res://assets/models/mach_tractor.glb" id="56_mach_t"]
+[ext_resource type="PackedScene" uid="uid://cdr1pvr2w0d4a" path="res://assets/models/mach_cart.glb" id="57_mach_c"]
+[ext_resource type="PackedScene" uid="uid://bh5dfbe8jk1or" path="res://assets/models/mach_windmill.glb" id="58_mach_w"]
+[ext_resource type="PackedScene" uid="uid://bjmet0foisngs" path="res://assets/models/mach_pump.glb" id="59_mach_p"]
+[ext_resource type="PackedScene" uid="uid://dcpafu05j3u7r" path="res://assets/models/char_farmer.glb" id="60_char_f"]
+[ext_resource type="PackedScene" uid="uid://4n2rjtaedjea" path="res://assets/models/an_chicken.glb" id="61_an_chi"]
+[ext_resource type="PackedScene" uid="uid://duh5ctginrrmu" path="res://assets/models/an_cow.glb" id="62_an_cow"]
+[ext_resource type="PackedScene" uid="uid://ckm2fnfmi51k7" path="res://assets/models/an_dog.glb" id="63_an_dog"]
+[ext_resource type="PackedScene" uid="uid://bqrns05mhubml" path="res://assets/models/gn_scatter.glb" id="64_gn_sca"]
+[ext_resource type="PackedScene" uid="uid://csb6b2bng26dl" path="res://assets/models/gn_fence_line.glb" id="65_gn_fen"]
+[ext_resource type="PackedScene" uid="uid://bbpewiw6suc6" path="res://assets/models/dress_fallen_crates.glb" id="66_dress_"]
+[ext_resource type="PackedScene" uid="uid://dfy6nur52juyb" path="res://assets/models/dress_banner.glb" id="67_dress_"]
+[ext_resource type="Script" path="res://scripts/core/asset_showcase.gd" id="script"]
+
+[sub_resource type="ProceduralSkyMaterial" id="sky_mat"]
+sky_top_color = Color(0.38, 0.55, 0.82, 1)
+sky_horizon_color = Color(0.74, 0.82, 0.9, 1)
+ground_horizon_color = Color(0.74, 0.82, 0.9, 1)
+
+[sub_resource type="Sky" id="sky"]
+sky_material = SubResource("sky_mat")
+
+[sub_resource type="Environment" id="env"]
+background_mode = 2
+sky = SubResource("sky")
+ambient_light_source = 3
+ambient_light_color = Color(0.75, 0.8, 0.9, 1)
+ambient_light_energy = 0.55
+
+[sub_resource type="StandardMaterial3D" id="base_mat"]
+albedo_color = Color(0.36, 0.4, 0.46, 1)
+
+[sub_resource type="PlaneMesh" id="base_mesh"]
+material = SubResource("base_mat")
+size = Vector2(539.029, 400)
+
+[sub_resource type="StandardMaterial3D" id="ground_mat"]
+albedo_color = Color(0.45, 0.66, 0.34, 1)
+
+[sub_resource type="PlaneMesh" id="floor_Props"]
+material = SubResource("ground_mat")
+size = Vector2(12.1, 5.8)
+
+[sub_resource type="PlaneMesh" id="floor_Fences"]
+material = SubResource("ground_mat")
+size = Vector2(8, 3.32)
+
+[sub_resource type="PlaneMesh" id="floor_Structures"]
+material = SubResource("ground_mat")
+size = Vector2(22, 16.7)
+
+[sub_resource type="PlaneMesh" id="floor_Terrain"]
+material = SubResource("ground_mat")
+size = Vector2(15.6, 12)
+
+[sub_resource type="PlaneMesh" id="floor_Rocks"]
+material = SubResource("ground_mat")
+size = Vector2(13.5, 5.2)
+
+[sub_resource type="PlaneMesh" id="floor_Vegetation"]
+material = SubResource("ground_mat")
+size = Vector2(15.2, 6.2)
+
+[sub_resource type="PlaneMesh" id="floor_Crops"]
+material = SubResource("ground_mat")
+size = Vector2(6.8, 6.8)
+
+[sub_resource type="PlaneMesh" id="floor_Machinery"]
+material = SubResource("ground_mat")
+size = Vector2(11.6, 6.2)
+
+[sub_resource type="PlaneMesh" id="floor_Characters"]
+material = SubResource("ground_mat")
+size = Vector2(7.871, 5.51)
+
+[sub_resource type="PlaneMesh" id="floor_Scenery"]
+material = SubResource("ground_mat")
+size = Vector2(16.358, 13.189)
+
+[node name="AssetShowcase" type="Node3D" unique_id=1363982050]
+script = ExtResource("script")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1159688185]
+environment = SubResource("env")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=1446206965]
+transform = Transform3D(0.866025, -0.25, 0.433013, 0, 0.866025, 0.5, -0.5, -0.433013, 0.75, 0, 20, 0)
+shadow_enabled = true
+directional_shadow_max_distance = 120.0
+
+[node name="Base" type="MeshInstance3D" parent="." unique_id=1171149021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.015, -0.6, -10)
+mesh = SubResource("base_mesh")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1627379950]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0.6, 0, -0.6, 0.8, 68.015, 70, 60)
+fov = 50.0
+far = 400.0
+
+[node name="Props" type="Node3D" parent="." unique_id=868585889 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Props" unique_id=1422527642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05, -0.01, -0.7)
+mesh = SubResource("floor_Props")
+
+[node name="Label" type="Label3D" parent="Props" unique_id=1705879019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Props"
+font_size = 96
+outline_size = 24
+
+[node name="prop_crate_small" parent="Props" unique_id=1815972116 instance=ExtResource("1_prop_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0, -0.5)
+
+[node name="prop_crate_large" parent="Props" unique_id=1672184438 instance=ExtResource("2_prop_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7, 0, -0.5)
+
+[node name="prop_barrel" parent="Props" unique_id=1253812821 instance=ExtResource("3_prop_b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1, 0, -0.5)
+
+[node name="prop_bucket" parent="Props" unique_id=163942050 instance=ExtResource("4_prop_b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2, 0, -0.5)
+
+[node name="prop_sack" parent="Props" unique_id=249082704 instance=ExtResource("5_prop_s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.25, 0, -0.5)
+
+[node name="prop_hay_bale" parent="Props" unique_id=2079475405 instance=ExtResource("6_prop_h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.55, 0, -0.5)
+
+[node name="prop_trough" parent="Props" unique_id=1908080104 instance=ExtResource("7_prop_t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4, 0, -0.5)
+
+[node name="prop_lantern" parent="Props" unique_id=1192712082 instance=ExtResource("8_prop_l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.95, 0, -0.5)
+
+[node name="prop_sign_post" parent="Props" unique_id=1265615275 instance=ExtResource("9_prop_s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, -1.9)
+
+[node name="prop_sign_hang" parent="Props" unique_id=1429100054 instance=ExtResource("10_prop_s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.85, 0, -1.9)
+
+[node name="tool_hoe" parent="Props" unique_id=1740649416 instance=ExtResource("11_tool_h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05, 0, -1.9)
+
+[node name="tool_watering_can" parent="Props" unique_id=1546392230 instance=ExtResource("12_tool_w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05, 0, -1.9)
+
+[node name="tool_seed_bag" parent="Props" unique_id=589438507 instance=ExtResource("13_tool_s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05, 0, -1.9)
+
+[node name="kit_door" parent="Props" unique_id=1715112330 instance=ExtResource("14_kit_do")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25, 0, -1.9)
+
+[node name="kit_window" parent="Props" unique_id=1858810815 instance=ExtResource("15_kit_wi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.7, 0, -1.9)
+
+[node name="Fences" type="Node3D" parent="." unique_id=330935291 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Fences" unique_id=1988304908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1, -0.01, 0.54)
+mesh = SubResource("floor_Fences")
+
+[node name="Label" type="Label3D" parent="Fences" unique_id=1675407736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Fences"
+font_size = 96
+outline_size = 24
+
+[node name="fence_post" parent="Fences" unique_id=1087524724 instance=ExtResource("16_fence_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.25, 0, -0.06)
+
+[node name="fence_rail" parent="Fences" unique_id=1896840665 instance=ExtResource("17_fence_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2, 0, -0.06)
+
+[node name="fence_corner" parent="Fences" unique_id=2083837099 instance=ExtResource("18_fence_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.15, 0, -0.06)
+
+[node name="fence_gate" parent="Fences" unique_id=545963336 instance=ExtResource("19_fence_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6, 0, -0.06)
+
+[node name="Structures" type="Node3D" parent="." unique_id=1716722944 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Structures" unique_id=867696408]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.1, -0.01, -6.15)
+mesh = SubResource("floor_Structures")
+
+[node name="Label" type="Label3D" parent="Structures" unique_id=182858024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.1, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Structures"
+font_size = 96
+outline_size = 24
+
+[node name="bld_farmhouse" parent="Structures" unique_id=1435435738 instance=ExtResource("20_bld_fa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1, 0, -3)
+
+[node name="bld_barn" parent="Structures" unique_id=474006170 instance=ExtResource("21_bld_ba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.6, 0, -3)
+
+[node name="bld_shed" parent="Structures" unique_id=1793369834 instance=ExtResource("22_bld_sh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6, 0, -3)
+
+[node name="bld_chicken_coop" parent="Structures" unique_id=275204884 instance=ExtResource("23_bld_ch")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.1, 0, -8.5)
+
+[node name="bld_well" parent="Structures" unique_id=1159001636 instance=ExtResource("24_bld_we")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.4, 0, -8.5)
+
+[node name="Terrain" type="Node3D" parent="." unique_id=1070588675 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Terrain" unique_id=1828188049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9, -0.4, -3.8)
+mesh = SubResource("floor_Terrain")
+
+[node name="Label" type="Label3D" parent="Terrain" unique_id=834464799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Terrain"
+font_size = 96
+outline_size = 24
+
+[node name="ter_tile_flat" parent="Terrain" unique_id=391711887 instance=ExtResource("25_ter_ti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.1, 0, -2)
+
+[node name="ter_tile_slope" parent="Terrain" unique_id=785969664 instance=ExtResource("26_ter_ti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9, 0, -2)
+
+[node name="ter_tile_corner" parent="Terrain" unique_id=289815629 instance=ExtResource("27_ter_ti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.7, 0, -2)
+
+[node name="ter_pond" parent="Terrain" unique_id=1288900878 instance=ExtResource("28_ter_po")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.1, 0, -6.8)
+
+[node name="path_straight" parent="Terrain" unique_id=433586046 instance=ExtResource("29_path_s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9, 0, -6.8)
+
+[node name="path_corner" parent="Terrain" unique_id=1457924876 instance=ExtResource("30_path_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.2, 0, -6.8)
+
+[node name="field_plot" parent="Terrain" unique_id=1731458861 instance=ExtResource("31_field_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, -6.8)
+
+[node name="Rocks" type="Node3D" parent="." unique_id=1284109637 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Rocks" unique_id=1189353522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.45, -0.01, -0.4)
+mesh = SubResource("floor_Rocks")
+
+[node name="Label" type="Label3D" parent="Rocks" unique_id=1883606301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.45, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Rocks"
+font_size = 96
+outline_size = 24
+
+[node name="rock_a" parent="Rocks" unique_id=1405676462 instance=ExtResource("32_rock_a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.1, 0, -1)
+
+[node name="rock_b" parent="Rocks" unique_id=357675331 instance=ExtResource("33_rock_b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.8, 0, -1)
+
+[node name="rock_c" parent="Rocks" unique_id=446970158 instance=ExtResource("34_rock_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.35, 0, -1)
+
+[node name="cliff_straight" parent="Rocks" unique_id=901112054 instance=ExtResource("35_cliff_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.4, 0, -1)
+
+[node name="cliff_corner" parent="Rocks" unique_id=1013384565 instance=ExtResource("36_cliff_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.2, 0, -1)
+
+[node name="Vegetation" type="Node3D" parent="." unique_id=2136439413 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Vegetation" unique_id=1773871674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.8, -0.01, -0.9)
+mesh = SubResource("floor_Vegetation")
+
+[node name="Label" type="Label3D" parent="Vegetation" unique_id=1265069656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.8, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Vegetation"
+font_size = 96
+outline_size = 24
+
+[node name="tree_oak" parent="Vegetation" unique_id=2019814991 instance=ExtResource("37_tree_o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.7, 0, -1.5)
+
+[node name="tree_pine" parent="Vegetation" unique_id=1184090916 instance=ExtResource("38_tree_p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.2, 0, -1.5)
+
+[node name="bush" parent="Vegetation" unique_id=1974106910 instance=ExtResource("39_bush")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.7, 0, -1.5)
+
+[node name="flower_a" parent="Vegetation" unique_id=1480151304 instance=ExtResource("40_flower")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.35, 0, -1.5)
+
+[node name="flower_b" parent="Vegetation" unique_id=1276735147 instance=ExtResource("41_flower")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.65, 0, -1.5)
+
+[node name="flower_c" parent="Vegetation" unique_id=2092383554 instance=ExtResource("42_flower")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.95, 0, -1.5)
+
+[node name="grass_tuft" parent="Vegetation" unique_id=486413912 instance=ExtResource("43_grass_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.25, 0, -1.5)
+
+[node name="Crops" type="Node3D" parent="." unique_id=593856180 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Crops" unique_id=58545006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.8, -0.01, -1.2)
+mesh = SubResource("floor_Crops")
+
+[node name="Label" type="Label3D" parent="Crops" unique_id=1475315039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.8, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Crops"
+font_size = 96
+outline_size = 24
+
+[node name="crop_carrot_s0" parent="Crops" unique_id=901879376 instance=ExtResource("44_crop_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -0.6)
+
+[node name="crop_carrot_s1" parent="Crops" unique_id=1812340369 instance=ExtResource("45_crop_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.2, 0, -0.6)
+
+[node name="crop_carrot_s2" parent="Crops" unique_id=588227590 instance=ExtResource("46_crop_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.4, 0, -0.6)
+
+[node name="crop_carrot_s3" parent="Crops" unique_id=1638196114 instance=ExtResource("47_crop_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.6, 0, -0.6)
+
+[node name="crop_wheat_s0" parent="Crops" unique_id=483803165 instance=ExtResource("48_crop_w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -1.8)
+
+[node name="crop_wheat_s1" parent="Crops" unique_id=1274645347 instance=ExtResource("49_crop_w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.2, 0, -1.8)
+
+[node name="crop_wheat_s2" parent="Crops" unique_id=726386243 instance=ExtResource("50_crop_w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.4, 0, -1.8)
+
+[node name="crop_wheat_s3" parent="Crops" unique_id=13652487 instance=ExtResource("51_crop_w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.6, 0, -1.8)
+
+[node name="crop_pumpkin_s0" parent="Crops" unique_id=1367206743 instance=ExtResource("52_crop_p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -3)
+
+[node name="crop_pumpkin_s1" parent="Crops" unique_id=1897861414 instance=ExtResource("53_crop_p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.2, 0, -3)
+
+[node name="crop_pumpkin_s2" parent="Crops" unique_id=832527037 instance=ExtResource("54_crop_p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.4, 0, -3)
+
+[node name="crop_pumpkin_s3" parent="Crops" unique_id=57521680 instance=ExtResource("55_crop_p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.6, 0, -3)
+
+[node name="Machinery" type="Node3D" parent="." unique_id=2022923410 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Machinery" unique_id=729113732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105, -0.01, -0.9)
+mesh = SubResource("floor_Machinery")
+
+[node name="Label" type="Label3D" parent="Machinery" unique_id=1385289804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Machinery"
+font_size = 96
+outline_size = 24
+
+[node name="mach_tractor" parent="Machinery" unique_id=151814198 instance=ExtResource("56_mach_t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101, 0, -1.5)
+
+[node name="mach_cart" parent="Machinery" unique_id=1016557896 instance=ExtResource("57_mach_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.5, 0, -1.5)
+
+[node name="mach_windmill" parent="Machinery" unique_id=1389708692 instance=ExtResource("58_mach_w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.7, 0, -1.5)
+
+[node name="mach_pump" parent="Machinery" unique_id=1978269661 instance=ExtResource("59_mach_p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.6, 0, -1.5)
+
+[node name="Characters" type="Node3D" parent="." unique_id=1273651328 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Characters" unique_id=1960111551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.735, -0.01, -0.555)
+mesh = SubResource("floor_Characters")
+
+[node name="Label" type="Label3D" parent="Characters" unique_id=2029001981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.735, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Characters"
+font_size = 96
+outline_size = 24
+
+[node name="char_farmer" parent="Characters" unique_id=1643403399 instance=ExtResource("60_char_f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 113.245, 0, -1.155)
+
+[node name="an_chicken" parent="Characters" unique_id=1418607970 instance=ExtResource("61_an_chi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.041, 0, -1.155)
+
+[node name="an_cow" parent="Characters" unique_id=2086119756 instance=ExtResource("62_an_cow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 116.781, 0, -1.155)
+
+[node name="an_dog" parent="Characters" unique_id=2023906363 instance=ExtResource("63_an_dog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.521, 0, -1.155)
+
+[node name="Scenery" type="Node3D" parent="." unique_id=2128715846 groups=["bay"]]
+
+[node name="Floor" type="MeshInstance3D" parent="Scenery" unique_id=160182352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.85, -0.01, -4.394)
+mesh = SubResource("floor_Scenery")
+
+[node name="Label" type="Label3D" parent="Scenery" unique_id=619588750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.85, 0.35, 1.3)
+pixel_size = 0.007
+billboard = 1
+text = "Scenery"
+font_size = 96
+outline_size = 24
+
+[node name="gn_scatter" parent="Scenery" unique_id=1323240916 instance=ExtResource("64_gn_sca")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.77, 0, -2.107)
+
+[node name="gn_fence_line" parent="Scenery" unique_id=899827053 instance=ExtResource("65_gn_fen")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.549, 0, -2.107)
+
+[node name="dress_fallen_crates" parent="Scenery" unique_id=2050581813 instance=ExtResource("66_dress_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 124.685, 0, -7.701)
+
+[node name="dress_banner" parent="Scenery" unique_id=1392672162 instance=ExtResource("67_dress_")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.599, 0, -7.701)

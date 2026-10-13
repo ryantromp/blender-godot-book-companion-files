@@ -1,0 +1,951 @@
+{
+ "assets": {
+  "an_chicken": {
+   "clips": {
+    "an_chicken_idle": true,
+    "an_chicken_peck": true,
+    "an_chicken_walk": true
+   },
+   "materials": [
+    "M_char"
+   ],
+   "shapes": [],
+   "size": [
+    0.226,
+    0.42,
+    0.4586
+   ],
+   "tris": 486
+  },
+  "an_cow": {
+   "clips": {
+    "an_cow_graze": true,
+    "an_cow_idle": true,
+    "an_cow_walk": true
+   },
+   "materials": [
+    "M_char"
+   ],
+   "shapes": [],
+   "size": [
+    0.78,
+    1.4619,
+    2.31
+   ],
+   "tris": 864
+  },
+  "an_dog": {
+   "clips": {
+    "an_dog_bark": false,
+    "an_dog_idle": true,
+    "an_dog_walk": true
+   },
+   "materials": [
+    "M_char"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.615,
+    1.0294
+   ],
+   "tris": 856
+  },
+  "bld_barn": {
+   "clips": {},
+   "materials": [
+    "M_farm_ao"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "tris": 112
+  },
+  "bld_chicken_coop": {
+   "clips": {},
+   "materials": [
+    "M_farm_ao"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    2.0,
+    1.8,
+    2.0
+   ],
+   "tris": 152
+  },
+  "bld_farmhouse": {
+   "clips": {},
+   "materials": [
+    "M_farm_ao"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    6.0,
+    5.5,
+    5.0
+   ],
+   "tris": 396
+  },
+  "bld_shed": {
+   "clips": {},
+   "materials": [
+    "M_farm_ao"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    3.0,
+    2.8,
+    3.0
+   ],
+   "tris": 116
+  },
+  "bld_well": {
+   "clips": {},
+   "materials": [
+    "M_farm_ao"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    1.6,
+    2.4,
+    1.6
+   ],
+   "tris": 192
+  },
+  "bush": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    1.0,
+    0.8,
+    1.0
+   ],
+   "tris": 192
+  },
+  "char_farmer": {
+   "clips": {
+    "char_farmer_harvest": false,
+    "char_farmer_idle": true,
+    "char_farmer_plant": false,
+    "char_farmer_run": true,
+    "char_farmer_walk": true,
+    "char_farmer_water": false
+   },
+   "materials": [
+    "M_char"
+   ],
+   "shapes": [],
+   "size": [
+    0.8909,
+    1.7,
+    0.58
+   ],
+   "tris": 1172
+  },
+  "cliff_corner": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    2.0,
+    3.0,
+    2.0
+   ],
+   "tris": 190
+  },
+  "cliff_straight": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    4.0,
+    3.0,
+    1.5
+   ],
+   "tris": 268
+  },
+  "crop_carrot_s0": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.24,
+    0.05,
+    0.24
+   ],
+   "tris": 28
+  },
+  "crop_carrot_s1": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.24,
+    0.128,
+    0.24
+   ],
+   "tris": 32
+  },
+  "crop_carrot_s2": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.24,
+    0.2254,
+    0.24
+   ],
+   "tris": 38
+  },
+  "crop_carrot_s3": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.35,
+    0.3
+   ],
+   "tris": 62
+  },
+  "crop_pumpkin_s0": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.32,
+    0.05,
+    0.32
+   ],
+   "tris": 28
+  },
+  "crop_pumpkin_s1": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.32,
+    0.0954,
+    0.32
+   ],
+   "tris": 40
+  },
+  "crop_pumpkin_s2": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.4715,
+    0.172,
+    0.4483
+   ],
+   "tris": 94
+  },
+  "crop_pumpkin_s3": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.7,
+    0.5,
+    0.7
+   ],
+   "tris": 128
+  },
+  "crop_wheat_s0": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.05,
+    0.3
+   ],
+   "tris": 28
+  },
+  "crop_wheat_s1": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.1588,
+    0.3
+   ],
+   "tris": 34
+  },
+  "crop_wheat_s2": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.4361,
+    0.3
+   ],
+   "tris": 40
+  },
+  "crop_wheat_s3": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.4,
+    0.9,
+    0.4
+   ],
+   "tris": 56
+  },
+  "dress_banner": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    1.4,
+    2.6,
+    0.3992
+   ],
+   "tris": 376
+  },
+  "dress_fallen_crates": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    6.0277,
+    0.9,
+    4.5749
+   ],
+   "tris": 1440
+  },
+  "fence_corner": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    0.12,
+    1.0,
+    0.12
+   ],
+   "tris": 108
+  },
+  "fence_gate": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    1.0,
+    0.9,
+    0.1
+   ],
+   "tris": 60
+  },
+  "fence_post": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    0.12,
+    1.0,
+    0.12
+   ],
+   "tris": 20
+  },
+  "fence_rail": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    2.0,
+    1.0,
+    0.1
+   ],
+   "tris": 36
+  },
+  "field_plot": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    1.0,
+    0.1,
+    1.0
+   ],
+   "tris": 40
+  },
+  "flower_a": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.15,
+    0.3,
+    0.15
+   ],
+   "tris": 50
+  },
+  "flower_b": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.15,
+    0.3,
+    0.15
+   ],
+   "tris": 26
+  },
+  "flower_c": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.15,
+    0.3,
+    0.15
+   ],
+   "tris": 56
+  },
+  "gn_fence_line": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    8.9603,
+    1.0,
+    3.1997
+   ],
+   "tris": 300
+  },
+  "gn_scatter": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    4.1981,
+    0.2999,
+    4.2138
+   ],
+   "tris": 17312
+  },
+  "grass_tuft": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.25,
+    0.3
+   ],
+   "tris": 24
+  },
+  "kit_door": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.9,
+    1.9,
+    0.08
+   ],
+   "tris": 40
+  },
+  "kit_window": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.8,
+    0.8,
+    0.08
+   ],
+   "tris": 52
+  },
+  "mach_cart": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    1.0,
+    0.895,
+    1.8
+   ],
+   "tris": 288
+  },
+  "mach_pump": {
+   "clips": {
+    "mach_pump_pump": false
+   },
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    0.4,
+    1.08,
+    0.6
+   ],
+   "tris": 120
+  },
+  "mach_tractor": {
+   "clips": {
+    "mach_tractor_drive": true
+   },
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    1.6,
+    2.0,
+    3.0
+   ],
+   "tris": 768
+  },
+  "mach_windmill": {
+   "clips": {
+    "mach_windmill_spin": true
+   },
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    3.0,
+    7.0,
+    2.9564
+   ],
+   "tris": 238
+  },
+  "path_corner": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    1.0,
+    0.02,
+    1.0
+   ],
+   "tris": 44
+  },
+  "path_straight": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    4.0,
+    0.02,
+    1.0
+   ],
+   "tris": 36
+  },
+  "prop_barrel": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.6,
+    0.9,
+    0.6
+   ],
+   "tris": 188
+  },
+  "prop_bucket": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.4,
+    0.35,
+    0.4
+   ],
+   "tris": 156
+  },
+  "prop_crate_large": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    1.0,
+    0.8,
+    1.0
+   ],
+   "tris": 100
+  },
+  "prop_crate_small": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.6,
+    0.6,
+    0.6
+   ],
+   "tris": 60
+  },
+  "prop_hay_bale": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.9,
+    0.5,
+    0.5
+   ],
+   "tris": 76
+  },
+  "prop_lantern": {
+   "clips": {},
+   "materials": [
+    "M_emissive",
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.2,
+    0.35,
+    0.2
+   ],
+   "tris": 148
+  },
+  "prop_sack": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.5,
+    0.6,
+    0.4
+   ],
+   "tris": 92
+  },
+  "prop_sign_hang": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.9,
+    0.5,
+    0.1
+   ],
+   "tris": 80
+  },
+  "prop_sign_post": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.8,
+    1.4,
+    0.1
+   ],
+   "tris": 36
+  },
+  "prop_trough": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    1.6,
+    0.45,
+    0.5
+   ],
+   "tris": 68
+  },
+  "rock_a": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    0.8,
+    0.5,
+    0.7
+   ],
+   "tris": 80
+  },
+  "rock_b": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    1.0,
+    0.6,
+    0.8
+   ],
+   "tris": 80
+  },
+  "rock_c": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConvexPolygonShape3D"
+   ],
+   "size": [
+    0.5,
+    0.4,
+    0.5
+   ],
+   "tris": 80
+  },
+  "ter_pond": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConcavePolygonShape3D"
+   ],
+   "size": [
+    4.0,
+    0.3,
+    4.0
+   ],
+   "tris": 130
+  },
+  "ter_tile_corner": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConcavePolygonShape3D"
+   ],
+   "size": [
+    4.0,
+    1.0,
+    4.0
+   ],
+   "tris": 32
+  },
+  "ter_tile_flat": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConcavePolygonShape3D"
+   ],
+   "size": [
+    4.0,
+    0.0,
+    4.0
+   ],
+   "tris": 32
+  },
+  "ter_tile_slope": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [
+    "ConcavePolygonShape3D"
+   ],
+   "size": [
+    4.0,
+    1.0,
+    4.0
+   ],
+   "tris": 32
+  },
+  "tool_hoe": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.2,
+    1.2,
+    0.6
+   ],
+   "tris": 36
+  },
+  "tool_seed_bag": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.3,
+    0.4,
+    0.15
+   ],
+   "tris": 44
+  },
+  "tool_watering_can": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    0.5,
+    0.4,
+    0.25
+   ],
+   "tris": 176
+  },
+  "tree_oak": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    3.0,
+    5.0,
+    3.0
+   ],
+   "tris": 508
+  },
+  "tree_pine": {
+   "clips": {},
+   "materials": [
+    "M_farm"
+   ],
+   "shapes": [],
+   "size": [
+    2.0,
+    6.0,
+    2.0
+   ],
+   "tris": 138
+  }
+ },
+ "shared_materials": [
+  "M_char",
+  "M_emissive",
+  "M_farm",
+  "M_farm_ao"
+ ]
+}

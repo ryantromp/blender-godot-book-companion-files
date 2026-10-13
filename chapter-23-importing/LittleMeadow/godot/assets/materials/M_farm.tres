@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bg23ctpvc5csd"]
+
+[ext_resource type="Texture2D" uid="uid://dug3cffcqu6f4" path="res://assets/textures/T_farm_atlas.png" id="1"]
+
+[resource]
+resource_name = "M_farm"
+cull_mode = 2
+albedo_texture = ExtResource("1")
+roughness = 0.9
