@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cxjixscffd0bm"]
+
+[ext_resource type="PackedScene" uid="uid://hjpe74y28j66" path="res://scenes/props/fence_rail.tscn" id="1_6s5vm"]
+[ext_resource type="PackedScene" uid="uid://dswngykidyvr4" path="res://scenes/props/fence_post.tscn" id="2_xr26e"]
+
+[node name="FenceSection" type="Node3D" unique_id=1523651330]
+
+[node name="Rail" parent="." unique_id=618868288 instance=ExtResource("1_6s5vm")]
+
+[node name="PostWest" parent="." unique_id=1005819166 instance=ExtResource("2_xr26e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="PostEast" parent="." unique_id=813133093 instance=ExtResource("2_xr26e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)

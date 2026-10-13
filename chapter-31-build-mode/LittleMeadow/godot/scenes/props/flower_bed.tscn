@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" uid="uid://c8keiutgb78sq" path="res://assets/models/field_plot.glb" id="1_soil"]
+[ext_resource type="PackedScene" uid="uid://cruuwrj6hrr3" path="res://assets/models/flower_a.glb" id="2_a"]
+[ext_resource type="PackedScene" path="res://assets/models/flower_b.glb" id="3_b"]
+[ext_resource type="PackedScene" path="res://assets/models/flower_c.glb" id="4_c"]
+
+[node name="FlowerBed" type="Node3D"]
+
+[node name="Soil" parent="." instance=ExtResource("1_soil")]
+
+[node name="FlowerA1" parent="." instance=ExtResource("2_a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27, 0.1, -0.22)
+
+[node name="FlowerB1" parent="." instance=ExtResource("3_b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24, 0.1, -0.26)
+
+[node name="FlowerC1" parent="." instance=ExtResource("4_c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0.02)
+
+[node name="FlowerA2" parent="." instance=ExtResource("2_a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26, 0.1, 0.27)
+
+[node name="FlowerB2" parent="." instance=ExtResource("3_b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27, 0.1, 0.25)

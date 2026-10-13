@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://13sg6qyecned"]
+
+[ext_resource type="PackedScene" uid="uid://muu56uebt3bm" path="res://scenes/props/prop_hay_bale.tscn" id="1_bikof"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_yv8h3"]
+
+[resource]
+script = ExtResource("2_yv8h3")
+id = &"hay"
+display_name = "Hay bale"
+scene = ExtResource("1_bikof")
+color = Color(0.83137256, 0.72156864, 0.2901961, 1)
+short_name = "Hy"

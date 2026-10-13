@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://rpdg5cltks2m"]
+
+[ext_resource type="PackedScene" uid="uid://brc4luuy2l4qa" path="res://scenes/props/prop_crate_large.tscn" id="1_gfsvj"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_aivww"]
+
+[resource]
+script = ExtResource("2_aivww")
+id = &"crate"
+display_name = "Crate"
+scene = ExtResource("1_gfsvj")
+cost = 6
+color = Color(0.7882353, 0.6509804, 0.41960785, 1)
+short_name = "Cr"

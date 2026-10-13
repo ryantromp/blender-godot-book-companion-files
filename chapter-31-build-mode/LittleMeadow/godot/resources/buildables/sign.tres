@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://c2tcfejg7sudr"]
+
+[ext_resource type="PackedScene" uid="uid://cdsvlp8ask7o8" path="res://scenes/props/prop_sign_post.tscn" id="1_q07rc"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_1jldk"]
+
+[resource]
+script = ExtResource("2_1jldk")
+id = &"sign"
+display_name = "Signpost"
+scene = ExtResource("1_q07rc")
+cost = 4
+color = Color(0.6901961, 0.5529412, 0.34117648, 1)
+short_name = "Si"

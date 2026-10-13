@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://81j13wld7ac5"]
+
+[ext_resource type="PackedScene" uid="uid://bhue74x2th77x" path="res://scenes/props/prop_trough.tscn" id="1_d66o5"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_c76xn"]
+
+[resource]
+script = ExtResource("2_c76xn")
+id = &"trough"
+display_name = "Trough"
+scene = ExtResource("1_d66o5")
+cost = 12
+footprint = Vector2i(2, 1)
+color = Color(0.43137255, 0.54901963, 0.627451, 1)
+short_name = "Tr"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://cdycguvh5v385"]
+
+[ext_resource type="PackedScene" uid="uid://cdjlakxeibwis" path="res://scenes/props/fence_corner.tscn" id="1_pna0m"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_fd700"]
+
+[resource]
+script = ExtResource("2_fd700")
+id = &"corner"
+display_name = "Corner post"
+category = 0
+scene = ExtResource("1_pna0m")
+cost = 3
+rotatable = false
+pivot_offset = Vector3(-0.5, 0, -0.5)
+color = Color(0.47843137, 0.36078432, 0.21960784, 1)
+short_name = "Co"

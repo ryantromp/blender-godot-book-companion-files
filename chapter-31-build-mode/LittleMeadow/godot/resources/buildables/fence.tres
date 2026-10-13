@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://dsw4dijyi278m"]
+
+[ext_resource type="PackedScene" uid="uid://cxjixscffd0bm" path="res://scenes/props/fence_section.tscn" id="1_aifks"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="1_iepte"]
+
+[resource]
+script = ExtResource("1_iepte")
+id = &"fence"
+display_name = "Fence"
+category = 0
+scene = ExtResource("1_aifks")
+cost = 6
+footprint = Vector2i(2, 1)
+pivot_offset = Vector3(0, 0, -0.5)
+line = true
+color = Color(0.6627451, 0.5176471, 0.34509805, 1)
+short_name = "Fe"
+metadata/_custom_type_script = "uid://cil86ymvw65fh"

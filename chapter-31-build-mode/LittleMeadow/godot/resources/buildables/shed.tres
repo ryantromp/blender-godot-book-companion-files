@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://g3kiq7cfinpe"]
+
+[ext_resource type="PackedScene" uid="uid://v7h1flmsqwda" path="res://scenes/world/bld_shed.tscn" id="1_3xnrb"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_lda1r"]
+
+[resource]
+script = ExtResource("2_lda1r")
+id = &"shed"
+display_name = "Shed"
+category = 1
+scene = ExtResource("1_3xnrb")
+cost = 75
+footprint = Vector2i(3, 3)
+color = Color(0.70980394, 0.2784314, 0.23137255, 1)
+short_name = "Sh"

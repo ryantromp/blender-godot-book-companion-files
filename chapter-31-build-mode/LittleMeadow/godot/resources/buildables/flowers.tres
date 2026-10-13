@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://dpsk7xv36ds1l"]
+
+[ext_resource type="PackedScene" path="res://scenes/props/flower_bed.tscn" id="1_x5258"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_3hxjn"]
+
+[resource]
+script = ExtResource("2_3hxjn")
+id = &"flowers"
+display_name = "Flower bed"
+scene = ExtResource("1_x5258")
+cost = 3
+rotatable = false
+color = Color(0.8901961, 0.41568628, 0.5529412, 1)
+short_name = "Fl"

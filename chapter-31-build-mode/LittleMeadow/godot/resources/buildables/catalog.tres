@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="BuildCatalog" format=3 uid="uid://brb7x1eas56um"]
+
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="1_gaf6n"]
+[ext_resource type="Resource" uid="uid://dsw4dijyi278m" path="res://resources/buildables/fence.tres" id="2_dsg03"]
+[ext_resource type="Resource" uid="uid://cdycguvh5v385" path="res://resources/buildables/corner.tres" id="3_wlbqt"]
+[ext_resource type="Resource" uid="uid://bkulm71tik34x" path="res://resources/buildables/gate.tres" id="4_vma3t"]
+[ext_resource type="Resource" uid="uid://g3kiq7cfinpe" path="res://resources/buildables/shed.tres" id="5_vbmf1"]
+[ext_resource type="Resource" uid="uid://c0uefat1eprd" path="res://resources/buildables/well.tres" id="6_2jywq"]
+[ext_resource type="Resource" uid="uid://rpdg5cltks2m" path="res://resources/buildables/crate.tres" id="7_a2n1l"]
+[ext_resource type="Resource" uid="uid://muad50fbhial" path="res://resources/buildables/barrel.tres" id="8_cmkks"]
+[ext_resource type="Resource" uid="uid://13sg6qyecned" path="res://resources/buildables/hay.tres" id="9_56ucs"]
+[ext_resource type="Resource" uid="uid://81j13wld7ac5" path="res://resources/buildables/trough.tres" id="10_j324f"]
+[ext_resource type="Resource" uid="uid://bjg44t13yvf1i" path="res://resources/buildables/lantern.tres" id="11_xjfbm"]
+[ext_resource type="Resource" uid="uid://c2tcfejg7sudr" path="res://resources/buildables/sign.tres" id="12_avgj1"]
+[ext_resource type="Resource" uid="uid://dpsk7xv36ds1l" path="res://resources/buildables/flowers.tres" id="13_dpoiu"]
+[ext_resource type="Script" uid="uid://c7uvjfrj7lvkk" path="res://scripts/build/build_catalog.gd" id="14_8h6ay"]
+
+[resource]
+script = ExtResource("14_8h6ay")
+items = Array[ExtResource("1_gaf6n")]([ExtResource("2_dsg03"), ExtResource("3_wlbqt"), ExtResource("4_vma3t"), ExtResource("5_vbmf1"), ExtResource("6_2jywq"), ExtResource("7_a2n1l"), ExtResource("8_cmkks"), ExtResource("9_56ucs"), ExtResource("10_j324f"), ExtResource("11_xjfbm"), ExtResource("12_avgj1"), ExtResource("13_dpoiu")])

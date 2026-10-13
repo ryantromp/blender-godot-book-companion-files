@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://bkulm71tik34x"]
+
+[ext_resource type="PackedScene" uid="uid://o82hibv1cnnl" path="res://scenes/props/fence_gate.tscn" id="1_8i1ws"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_srh6s"]
+
+[resource]
+script = ExtResource("2_srh6s")
+id = &"gate"
+display_name = "Gate"
+category = 0
+scene = ExtResource("1_8i1ws")
+cost = 8
+pivot_offset = Vector3(-0.5, 0, -0.5)
+color = Color(0.7607843, 0.6039216, 0.35686275, 1)
+short_name = "Ga"

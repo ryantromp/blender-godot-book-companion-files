@@ -1,0 +1,42 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/build_slot.gd" id="1_slot"]
+
+[node name="BuildSlot" type="PanelContainer"]
+custom_minimum_size = Vector2(72, 72)
+theme_type_variation = &"SlotPanel"
+script = ExtResource("1_slot")
+
+[node name="Swatch" type="ColorRect" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Badge" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Ra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Key" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 15
+text = "1"
+
+[node name="Cost" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 15
+text = "4"
+
+[node name="Mark" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+color = Color(0.949, 0.788, 0.298, 1)

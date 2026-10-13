@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://bjg44t13yvf1i"]
+
+[ext_resource type="PackedScene" uid="uid://cmg4jonyv235b" path="res://scenes/props/prop_lantern.tscn" id="1_d535u"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_behxj"]
+
+[resource]
+script = ExtResource("2_behxj")
+id = &"lantern"
+display_name = "Lantern"
+scene = ExtResource("1_d535u")
+cost = 8
+rotatable = false
+color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+short_name = "La"
