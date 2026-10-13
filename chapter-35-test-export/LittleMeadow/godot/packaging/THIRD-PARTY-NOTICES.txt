@@ -1,0 +1,139 @@
+LITTLE MEADOW: THIRD-PARTY NOTICES
+==================================
+
+This file belongs with every copy of the game Little Meadow 1.0.0. It names the work of others that the game
+contains and the licence of each. The credits window of the game (Credits on the title screen) shows the same
+list in short form.
+
+Files next to this one:
+  LICENSE-GODOT.txt     the permission notice of the Godot Engine (MIT licence), word for word
+  COPYRIGHT-GODOT.txt   the licence overview of the Godot Engine source, word for word, with the full text of
+                        every licence it names
+  README.txt            how to start and play
+
+1. Godot Engine 4.7.2
+---------------------
+The game program (LittleMeadow.x86_64 or LittleMeadow.exe) contains the Godot Engine. It is built from the
+source of Godot 4.7.2 stable (commit ed1daf0bf001b61586d9930840f2f1394092c079, https://godotengine.org).
+Copyright (c) 2014-present Godot Engine contributors.
+Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+Licence: MIT. The permission notice is in LICENSE-GODOT.txt and must stay with every copy.
+
+The engine contains libraries of other authors. COPYRIGHT-GODOT.txt, copied from that source, lists every
+library with its copyright and licence and ends with the licence texts. Six of its entries, as written there:
+
+  FreeType      1996-2025, David Turner, Robert Wilhelm, and Werner Lemberg. Licence: FTL
+  HarfBuzz      Google, Inc., Behdad Esfahbod, Red Hat, Inc. and others (the list is in the file). Licence: HarfBuzz
+  Jolt Physics  2021, Jorrit Rouwe. Licence: Expat (MIT)
+  libpng        1995-2026, The PNG Reference Library Authors and others. Licence: Zlib
+  Mbed TLS      The Mbed TLS Contributors. Licence: Apache-2.0
+  zlib          1995-2026, Jean-loup Gailly and Mark Adler. Licence: Zlib
+
+The file covers all libraries of the source tree. Which of them the program uses depends on the modules the
+build switched on.
+
+2. Nunito (font)
+----------------
+The text of the menus and the interface is set in Nunito, a variable font by Vernon Adams, Cyreal and
+Jacques Le Bailly. Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito).
+The font file is unchanged. Licence: SIL Open Font License 1.1, whose text follows.
+
+Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+3. Sounds
+---------
+The 26 sound effects, ambience loops and music tracks were made for Little Meadow by the authors with a script
+(synthesis, no sample or recording of anyone else). The authors dedicate them to the public domain under
+CC0 1.0 Universal, https://creativecommons.org/publicdomain/zero/1.0/

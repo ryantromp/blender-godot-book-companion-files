@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://0p8sbm6d4ojk"]
+
+[ext_resource type="Script" uid="uid://blxft1ijyhj12" path="res://scratch/ex35_debug.gd" id="1"]
+
+[node name="Debug" type="Node" unique_id=482663362]
+script = ExtResource("1")
+
+[node name="Label" type="Label" parent="." unique_id=1980779789]
+offset_right = 40.0
+offset_bottom = 23.0

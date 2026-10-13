@@ -1,0 +1,88 @@
+{
+	"title": "Credits",
+	"intro": "Little Meadow was made with free and open source software. Thank you to everyone who builds it.",
+	"sections": [
+		{
+			"heading": "Software used in the book",
+			"items": [
+				{
+					"name": "Blender",
+					"detail": "3D modelling, rigging, animation and rendering, version 5.2.2 LTS",
+					"license": "GPL-3.0-or-later",
+					"url": "https://www.blender.org"
+				},
+				{
+					"name": "Blender add-ons used",
+					"detail": "Rigify (rig generation) and Node Wrangler (node shortcuts), both GPL-2.0-or-later, and the glTF 2.0 importer and exporter (Apache-2.0). All three ship inside Blender",
+					"license": "GPL-2.0-or-later, Apache-2.0"
+				},
+				{
+					"name": "Godot Engine",
+					"detail": "Game engine, version 4.7.2 stable. Copyright (c) 2014-present Godot Engine contributors. Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur. The exported game contains the engine, so its MIT permission notice (below) belongs with every copy of the game",
+					"license": "MIT",
+					"url": "https://docs.godotengine.org/en/stable/about/complying_with_licenses.html"
+				},
+				{
+					"name": "Git",
+					"detail": "Version control for the game project (optional tool, not part of the game)",
+					"license": "GPL-2.0-only",
+					"url": "https://git-scm.com"
+				}
+			]
+		},
+		{
+			"heading": "Fonts",
+			"items": [
+				{
+					"name": "Inter",
+					"detail": "Body text of this book. Copyright 2016 The Inter Project Authors",
+					"license": "SIL Open Font License 1.1",
+					"url": "https://rsms.me/inter/"
+				},
+				{
+					"name": "DejaVu Sans Mono",
+					"detail": "Code listings of this book. Copyright (c) 2003 Bitstream, Inc. DejaVu changes are in the public domain",
+					"license": "Bitstream Vera and public domain licence",
+					"url": "https://dejavu-fonts.github.io"
+				},
+				{
+					"name": "Nunito",
+					"detail": "Text of the game's menus and HUD. Variable font by Vernon Adams, Cyreal and Jacques Le Bailly. Copyright 2014 The Nunito Project Authors. The font file is unchanged and the licence text sits next to it in assets/fonts/OFL.txt",
+					"license": "SIL Open Font License 1.1",
+					"url": "https://github.com/googlefonts/nunito"
+				}
+			]
+		},
+		{
+			"heading": "Game content",
+			"items": [
+				{
+					"name": "Little Meadow models, textures and scripts",
+					"detail": "Made by the authors for this book. [FILL IN BEFORE RELEASE: the licence of the game models, textures and GDScript files. No licence file exists in the project yet]",
+					"license": "[FILL IN BEFORE RELEASE]"
+				},
+				{
+					"name": "Little Meadow Blender scripts",
+					"detail": "The Python scripts of Chapters 9 to 20. [FILL IN BEFORE RELEASE: a licence that is compatible with the GPL of Blender]",
+					"license": "[FILL IN BEFORE RELEASE]"
+				},
+				{
+					"name": "Sound effects, ambience and music",
+					"detail": "26 sounds made for this book by tools/make_audio.py (numpy and scipy synthesis, ffmpeg libvorbis). No third-party samples. The authors dedicate the sounds to the public domain",
+					"license": "CC0 1.0 (the authors' own work)",
+					"url": "https://creativecommons.org/publicdomain/zero/1.0/"
+				}
+			]
+		},
+		{
+			"heading": "Godot Engine licence text (MIT)",
+			"items": [
+				{
+					"name": "Permission notice",
+					"detail": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+					"license": "MIT"
+				}
+			]
+		}
+	]
+}
