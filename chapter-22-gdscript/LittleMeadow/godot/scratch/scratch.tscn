@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bmwyyv0ap577a"]
+
+[ext_resource type="Script" uid="uid://bguj4elhr3084" path="res://scratch/ex16_debug.gd" id="1_34kbd"]
+
+[node name="Scratch" type="Node" unique_id=1792620219]
+script = ExtResource("1_34kbd")
+
+[node name="Hen" type="Node" parent="." unique_id=2043654804 groups=["thirsty"]]
+
+[node name="Cow" type="Node" parent="." unique_id=1686699143]

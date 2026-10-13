@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ScratchCropData" format=3 uid="uid://cdajv6ikgqjra"]
+
+[ext_resource type="Script" uid="uid://d31aypai73ia8" path="res://scratch/scratch_crop_data.gd" id="1_5xd7x"]
+
+[resource]
+script = ExtResource("1_5xd7x")
+crop_name = "tomato"
+days_to_grow = 4
+sell_price = 9
+color = Color(0.8784314, 0.29411766, 0.22745098, 1)
+metadata/_custom_type_script = "uid://d31aypai73ia8"
