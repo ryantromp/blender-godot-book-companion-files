@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://brygm2qyaiiky"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_3t5vo"]
+
+[resource]
+script = ExtResource("1_3t5vo")
+id = &"carrot"
+display_name = "Carrot"
+color = Color(0.9098, 0.4392, 0.1647, 1)
+short_name = "Ca"
+metadata/_custom_type_script = "uid://dq6ghbmcp4kbn"

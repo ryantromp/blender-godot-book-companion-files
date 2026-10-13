@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bply14r0nurnp"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_g0gc3"]
+
+[resource]
+script = ExtResource("1_g0gc3")
+id = &"dog_biscuit"
+display_name = "Dog biscuit"
+color = Color(0.6627, 0.4549, 0.2471, 1)
+short_name = "Bi"
+metadata/_custom_type_script = "uid://dq6ghbmcp4kbn"
