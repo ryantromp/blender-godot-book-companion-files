@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ct23lkjhnmjbd"]
+
+[ext_resource type="PackedScene" uid="uid://guvfd7vvdvp8" path="res://assets/models/bld_farmhouse.glb" id="1_49fbe"]
+[ext_resource type="Script" uid="uid://c2wrrg7nfjswv" path="res://scripts/farming/sleep_spot.gd" id="2_nulgj"]
+[ext_resource type="PackedScene" uid="uid://ddsf42eq5cej0" path="res://scenes/fx/chimney_smoke.tscn" id="3_bg8xu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ee4j0"]
+size = Vector3(1.8, 2.2, 1.2)
+
+[node name="Farmhouse" unique_id=984486259 instance=ExtResource("1_49fbe")]
+
+[node name="bld_farmhouse__hull" parent="bld_farmhouse" parent_id_path=PackedInt32Array(1952275475) index="0" unique_id=200162447]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=1311346196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-3, 0, -2.5, 3, 0, -2.5, 3, 0, 2.5, -3, 0, 2.5)
+affect_navigation_mesh = true
+
+[node name="Door" type="Area3D" parent="." index="2" unique_id=1051681877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.6)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("2_nulgj")
+prompt_text = "Sleep until morning"
+interact_range = 2.5
+prompt_height = 2.8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Door" index="0" unique_id=1468462958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+shape = SubResource("BoxShape3D_ee4j0")
+
+[node name="ChimneySmoke" parent="." index="3" unique_id=1011441832 instance=ExtResource("3_bg8xu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 5.5, 0)

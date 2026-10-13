@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://dcp0mfxsfqlxp"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_0mwgc"]
+[ext_resource type="Script" uid="uid://dcf81cmbffumh" path="res://scripts/ui/hud.gd" id="1_hqnrr"]
+
+[node name="Hud" type="CanvasLayer" unique_id=59784477]
+script = ExtResource("1_hqnrr")
+
+[node name="Root" type="Control" parent="." unique_id=1502031122]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_0mwgc")
+
+[node name="TopBar" type="PanelContainer" parent="Root" unique_id=511210441]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="TopMargin" type="MarginContainer" parent="Root/TopBar" unique_id=1114690974]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_right = 6
+
+[node name="TopRow" type="HBoxContainer" parent="Root/TopBar/TopMargin" unique_id=1221565489]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="ClockLabel" type="Label" parent="Root/TopBar/TopMargin/TopRow" unique_id=1606656191]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Day 1   06:00"
+
+[node name="WeatherLabel" type="Label" parent="Root/TopBar/TopMargin/TopRow" unique_id=1180182858]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Clear"
+
+[node name="MoneyLabel" type="Label" parent="Root/TopBar/TopMargin/TopRow" unique_id=1205613200]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100 coins"
+
+[node name="ToolBar" type="PanelContainer" parent="Root" unique_id=225399657]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BarRow" type="HBoxContainer" parent="Root/ToolBar" unique_id=104598926]
+layout_mode = 2
+
+[node name="ToolRow" type="HBoxContainer" parent="Root/ToolBar/BarRow" unique_id=665032018]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Hoe" type="Button" parent="Root/ToolBar/BarRow/ToolRow" unique_id=853108617]
+custom_minimum_size = Vector2(88, 52)
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "1 Hoe"
+
+[node name="Seeds" type="Button" parent="Root/ToolBar/BarRow/ToolRow" unique_id=1097133423]
+custom_minimum_size = Vector2(88, 52)
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "2 Seeds"
+
+[node name="Can" type="Button" parent="Root/ToolBar/BarRow/ToolRow" unique_id=2086093202]
+custom_minimum_size = Vector2(88, 52)
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "3 Can"
+
+[node name="Hand" type="Button" parent="Root/ToolBar/BarRow/ToolRow" unique_id=582636573]
+custom_minimum_size = Vector2(88, 52)
+layout_mode = 2
+focus_mode = 0
+toggle_mode = true
+text = "4 Hand"
+
+[node name="Divider" type="VSeparator" parent="Root/ToolBar/BarRow" unique_id=247103521]
+layout_mode = 2
+
+[node name="Info" type="VBoxContainer" parent="Root/ToolBar/BarRow" unique_id=1736191821]
+layout_mode = 2
+
+[node name="HeldLabel" type="Label" parent="Root/ToolBar/BarRow/Info" unique_id=913256649]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Holding: nothing"
+
+[node name="WaterLabel" type="Label" parent="Root/ToolBar/BarRow/Info" unique_id=360174955]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Water: 0 / 0"
+
+[node name="BagButton" type="Button" parent="Root/ToolBar/BarRow" unique_id=157951931]
+layout_mode = 2
+focus_mode = 0
+text = "Bag (I)"
+
+[node name="BagPanel" type="PanelContainer" parent="Root" unique_id=1009624892]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.5
+offset_top = -23.0
+offset_right = 52.5
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BagColumn" type="VBoxContainer" parent="Root/BagPanel" unique_id=1837114711]
+layout_mode = 2
+
+[node name="TitleRow" type="HBoxContainer" parent="Root/BagPanel/BagColumn" unique_id=1984967674]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Root/BagPanel/BagColumn/TitleRow" unique_id=500672509]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Bag"
+
+[node name="BagCount" type="Label" parent="Root/BagPanel/BagColumn/TitleRow" unique_id=123323220]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0 / 24"
+
+[node name="Grid" type="GridContainer" parent="Root/BagPanel/BagColumn" unique_id=400826835]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 6
+
+[node name="Toast" type="PanelContainer" parent="Root" unique_id=873687766]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.5
+offset_top = 72.0
+offset_right = 50.5
+offset_bottom = 114.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="ToastLabel" type="Label" parent="Root/Toast" unique_id=223063257]
+unique_name_in_owner = true
+layout_mode = 2
+text = "+1 Carrot"
+
+[connection signal="pressed" from="Root/ToolBar/BarRow/BagButton" to="." method="_on_bag_button_pressed"]

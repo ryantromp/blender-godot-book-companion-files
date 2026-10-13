@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ddsf42eq5cej0"]
+
+[ext_resource type="Texture2D" uid="uid://i7k6psq2nmf5" path="res://assets/textures/vfx_dust_puff.png" id="1_sheet"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_smoke"]
+angle_min = -30.0
+angle_max = 30.0
+direction = Vector3(0, 1, 0)
+spread = 8.0
+initial_velocity_min = 0.5
+initial_velocity_max = 0.8
+gravity = Vector3(0.12, 0, 0)
+anim_speed_min = 1.0
+anim_speed_max = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smoke"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.78, 0.78, 0.8, 0.8)
+albedo_texture = ExtResource("1_sheet")
+billboard_mode = 3
+particles_anim_h_frames = 4
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_smoke"]
+material = SubResource("StandardMaterial3D_smoke")
+size = Vector2(1.4, 1.4)
+
+[node name="ChimneySmoke" type="Node3D" unique_id=1011441832]
+
+[node name="Smoke" type="GPUParticles3D" parent="." unique_id=1655455615]
+cast_shadow = 0
+amount = 6
+lifetime = 6.0
+preprocess = 6.0
+process_material = SubResource("ParticleProcessMaterial_smoke")
+draw_pass_1 = SubResource("QuadMesh_smoke")
