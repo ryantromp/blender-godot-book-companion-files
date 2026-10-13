@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://fmb6a04xxb3r"]
+
+[ext_resource type="Script" uid="uid://cig6iwf06jknv" path="res://scripts/actors/farmer.gd" id="1_gnhrn"]
+[ext_resource type="PackedScene" uid="uid://dcpafu05j3u7r" path="res://assets/models/char_farmer.glb" id="1_kovq4"]
+[ext_resource type="PackedScene" uid="uid://b1p844r0t82v6" path="res://scenes/fx/click_marker.tscn" id="3_x1kgb"]
+[ext_resource type="Script" uid="uid://dvq5xrh40uqol" path="res://scripts/actors/farmer_animation.gd" id="4_x1kgb"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qvdjk"]
+radius = 0.35
+height = 1.7
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_x1kgb"]
+fadein_time = 0.1
+fadeout_time = 0.2
+
+[sub_resource type="AnimationNodeTransition" id="AnimationNodeTransition_gjpq8"]
+input_0/name = "plant"
+input_0/auto_advance = false
+input_0/break_loop_at_end = false
+input_0/reset = true
+input_1/name = "water"
+input_1/auto_advance = false
+input_1/break_loop_at_end = false
+input_1/reset = true
+input_2/name = "harvest"
+input_2/auto_advance = false
+input_2/break_loop_at_end = false
+input_2/reset = true
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5cawc"]
+animation = &"char_farmer_harvest"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_t18oj"]
+animation = &"char_farmer_idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kx45f"]
+animation = &"char_farmer_run"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8d0in"]
+animation = &"char_farmer_walk"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_pql84"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ya55b"]
+xfade_time = 0.15
+advance_mode = 2
+advance_expression = "speed > 0.1"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_l18ko"]
+xfade_time = 0.15
+advance_mode = 2
+advance_expression = "speed <= 0.1"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gj00m"]
+xfade_time = 0.15
+advance_mode = 2
+advance_expression = "speed > run_threshold"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jqt5j"]
+xfade_time = 0.15
+advance_mode = 2
+advance_expression = "speed <= run_threshold"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xlyol"]
+xfade_time = 0.15
+advance_mode = 2
+advance_expression = "speed <= 0.1"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_i3xy3"]
+states/idle/node = SubResource("AnimationNodeAnimation_t18oj")
+states/idle/position = Vector2(423.6, 214.4)
+states/run/node = SubResource("AnimationNodeAnimation_kx45f")
+states/run/position = Vector2(663.6, 214.4)
+states/walk/node = SubResource("AnimationNodeAnimation_8d0in")
+states/walk/position = Vector2(503.6, 342.4)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_pql84"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_ya55b"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_l18ko"), "walk", "run", SubResource("AnimationNodeStateMachineTransition_gj00m"), "run", "walk", SubResource("AnimationNodeStateMachineTransition_jqt5j"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_xlyol")]
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_fqmpe"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qthg5"]
+animation = &"char_farmer_plant"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ui6kx"]
+animation = &"char_farmer_water"
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_qvdjk"]
+graph_offset = Vector2(-145.93335, -82.98889)
+nodes/output/position = Vector2(784, 96)
+nodes/Locomotion/node = SubResource("AnimationNodeStateMachine_i3xy3")
+nodes/Locomotion/position = Vector2(32, 64)
+nodes/Pace/node = SubResource("AnimationNodeTimeScale_fqmpe")
+nodes/Pace/position = Vector2(304, 64)
+nodes/Action/node = SubResource("AnimationNodeOneShot_x1kgb")
+nodes/Action/position = Vector2(512, 64)
+nodes/ActionPick/node = SubResource("AnimationNodeTransition_gjpq8")
+nodes/ActionPick/position = Vector2(304, 288)
+nodes/Plant/node = SubResource("AnimationNodeAnimation_qthg5")
+nodes/Plant/position = Vector2(48, 256)
+nodes/Water/node = SubResource("AnimationNodeAnimation_ui6kx")
+nodes/Water/position = Vector2(48, 432)
+nodes/Harvest/node = SubResource("AnimationNodeAnimation_5cawc")
+nodes/Harvest/position = Vector2(496, 432)
+node_connections = [&"output", 0, &"Action", &"Pace", 0, &"Locomotion", &"Action", 0, &"Pace", &"Action", 1, &"ActionPick", &"ActionPick", 0, &"Plant", &"ActionPick", 1, &"Water", &"ActionPick", 2, &"Harvest"]
+
+[node name="Farmer" type="CharacterBody3D" unique_id=1800034458]
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("1_gnhrn")
+
+[node name="Model" parent="." unique_id=717411247 instance=ExtResource("1_kovq4")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1909058988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
+shape = SubResource("CapsuleShape3D_qvdjk")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=633952566]
+path_desired_distance = 0.3
+target_desired_distance = 0.15
+path_height_offset = 0.45
+height = 1.75
+
+[node name="ClickMarker" parent="." unique_id=1265701583 instance=ExtResource("3_x1kgb")]
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=1935760230]
+root_node = NodePath("../Model")
+callback_mode_process = 0
+tree_root = SubResource("AnimationNodeBlendTree_qvdjk")
+advance_expression_base_node = NodePath("..")
+anim_player = NodePath("../Model/AnimationPlayer")
+parameters/Pace/scale = 1.0
+parameters/Action/active = false
+parameters/Action/internal_active = false
+parameters/Action/request = 0
+parameters/ActionPick/current_state = ""
+parameters/ActionPick/transition_request = ""
+parameters/ActionPick/current_index = -1
+script = ExtResource("4_x1kgb")
+
+[editable path="Model"]
