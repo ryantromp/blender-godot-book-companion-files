@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://0mwy8sah43db"]
+
+[ext_resource type="PackedScene" uid="uid://jlt4317qd7ft" path="res://assets/models/mach_tractor.glb" id="1_39d76"]
+[ext_resource type="Script" uid="uid://c4qastppg333r" path="res://scripts/machines/tractor_switch.gd" id="2_po0h0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eip4l"]
+size = Vector3(1.9, 2, 3.1)
+
+[node name="Tractor" unique_id=1789058351 instance=ExtResource("1_39d76")]
+
+[node name="mach_tractor__hull" parent="mach_tractor" parent_id_path=PackedInt32Array(1439846641) index="0" unique_id=705785067]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=1415515984]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.8, 0, -1.5, 0.8, 0, -1.5, 0.8, 0, 1.5, -0.8, 0, 1.5)
+affect_navigation_mesh = true
+
+[node name="Interactable" type="Area3D" parent="." index="3" unique_id=131719473 node_paths=PackedStringArray("animation_player")]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("2_po0h0")
+animation_player = NodePath("../AnimationPlayer")
+prompt_text = "Start the tractor"
+interact_range = 2.5
+prompt_height = 2.7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable" index="0" unique_id=626028330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.05)
+shape = SubResource("BoxShape3D_eip4l")

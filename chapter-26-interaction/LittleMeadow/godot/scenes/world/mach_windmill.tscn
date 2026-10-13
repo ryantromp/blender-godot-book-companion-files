@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ct3drelw084py"]
+
+[ext_resource type="PackedScene" uid="uid://bh5dfbe8jk1or" path="res://assets/models/mach_windmill.glb" id="1_a31f3"]
+[ext_resource type="Script" uid="uid://cmcmsc5tt03m5" path="res://scripts/machines/windmill.gd" id="2_01owl"]
+
+[node name="Windmill" unique_id=1091405136 instance=ExtResource("1_a31f3")]
+
+[node name="mach_windmill__hull" parent="mach_windmill" parent_id_path=PackedInt32Array(744523968) index="1" unique_id=1184846296]
+collision_layer = 8
+
+[node name="AnimationPlayer" parent="." index="1" unique_id=488754873]
+autoplay = &"mach_windmill_spin"
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=1823274001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, -0.0001)
+height = 2.5
+vertices = PackedVector3Array(-1.4782, 0, -1.4781, 1.4782, 0, -1.4781, 1.4782, 0, 1.4781, -1.4782, 0, 1.4781)
+affect_navigation_mesh = true
+
+[node name="Wind" type="Node" parent="." index="3" unique_id=577337250 node_paths=PackedStringArray("animation_player")]
+script = ExtResource("2_01owl")
+animation_player = NodePath("../AnimationPlayer")
