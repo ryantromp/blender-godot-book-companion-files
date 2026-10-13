@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dxgxgt45j5clq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_avgx7"]
+albedo_color = Color(0.8235294, 0.3882353, 0.30980393, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g2gv5"]
+material = SubResource("StandardMaterial3D_avgx7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgp6g"]
+albedo_color = Color(0.36862746, 0.61960787, 0.2784314, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g2gv5"]
+material = SubResource("StandardMaterial3D_sgp6g")
+size = Vector2(20, 20)
+
+[node name="Main" type="Node3D" unique_id=142683325]
+
+[node name="TestCube" type="MeshInstance3D" parent="." unique_id=1745291282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_g2gv5")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1614931042]
+transform = Transform3D(1, 0, 0, 0, 0.64278764, 0.76604444, 0, -0.76604444, 0.64278764, 0, 4.5, 3.8)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=914375439]
+transform = Transform3D(0.8660254, 0.38302222, -0.32139382, 0, 0.64278764, 0.76604444, 0.5, -0.66341394, 0.5566704, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Ground" type="MeshInstance3D" parent="." unique_id=1210364947]
+mesh = SubResource("PlaneMesh_g2gv5")
