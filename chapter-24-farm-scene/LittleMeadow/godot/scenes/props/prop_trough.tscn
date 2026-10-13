@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bhue74x2th77x"]
+
+[ext_resource type="PackedScene" uid="uid://drulod0ldk4jn" path="res://assets/models/prop_trough.glb" id="1_97309"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_25e"]
+size = Vector3(1.6, 0.45, 0.5)
+
+[node name="Trough" unique_id=87271153 instance=ExtResource("1_97309")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=85545819]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=695434014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.225, 0)
+shape = SubResource("BoxShape3D_25e")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=710820434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.8, 0, -0.25, 0.8, 0, -0.25, 0.8, 0, 0.25, -0.8, 0, 0.25)
+affect_navigation_mesh = true

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dmp4kmaayccy4"]
+
+[ext_resource type="PackedScene" uid="uid://cr8y2apo4843a" path="res://assets/models/cliff_corner.glb" id="1_3de5f"]
+
+[node name="CliffCorner" unique_id=1767241188 instance=ExtResource("1_3de5f")]
+
+[node name="cliff_corner__hull" parent="cliff_corner" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=485941541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1)
+affect_navigation_mesh = true

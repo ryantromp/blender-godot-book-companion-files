@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://v7h1flmsqwda"]
+
+[ext_resource type="PackedScene" uid="uid://ccortme65dlv3" path="res://assets/models/bld_shed.glb" id="1_56b43"]
+
+[node name="Shed" unique_id=677447117 instance=ExtResource("1_56b43")]
+
+[node name="bld_shed__hull" parent="bld_shed" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=398805678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-1.5, 0, -1.5, 1.5, 0, -1.5, 1.5, 0, 1.5, -1.5, 0, 1.5)
+affect_navigation_mesh = true

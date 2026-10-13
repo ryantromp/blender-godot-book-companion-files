@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://0mwy8sah43db"]
+
+[ext_resource type="PackedScene" uid="uid://jlt4317qd7ft" path="res://assets/models/mach_tractor.glb" id="1_39d76"]
+
+[node name="Tractor" unique_id=1789058351 instance=ExtResource("1_39d76")]
+
+[node name="mach_tractor__hull" parent="mach_tractor" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=1415515984]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.8, 0, -1.5, 0.8, 0, -1.5, 0.8, 0, 1.5, -0.8, 0, 1.5)
+affect_navigation_mesh = true

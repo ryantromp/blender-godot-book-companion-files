@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://owh7josr1vtf"]
+
+[ext_resource type="PackedScene" uid="uid://8uw5cqtahv4c" path="res://assets/models/cliff_straight.glb" id="1_93726"]
+
+[node name="CliffStraight" unique_id=466485281 instance=ExtResource("1_93726")]
+
+[node name="cliff_straight__hull" parent="cliff_straight" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=2085607810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-2, 0, -0.75, 2, 0, -0.75, 2, 0, 0.75, -2, 0, 0.75)
+affect_navigation_mesh = true

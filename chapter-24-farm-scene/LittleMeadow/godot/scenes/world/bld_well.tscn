@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cge5cxs15dkx7"]
+
+[ext_resource type="PackedScene" uid="uid://dflnqxxb2qdqt" path="res://assets/models/bld_well.glb" id="1_56b65"]
+
+[node name="Well" unique_id=1661876605 instance=ExtResource("1_56b65")]
+
+[node name="bld_well__hull" parent="bld_well" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=406211678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.8, 0, -0.8, 0.8, 0, -0.8, 0.8, 0, 0.8, -0.8, 0, 0.8)
+affect_navigation_mesh = true

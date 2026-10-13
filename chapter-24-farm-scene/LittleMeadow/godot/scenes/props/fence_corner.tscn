@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cdjlakxeibwis"]
+
+[ext_resource type="PackedScene" uid="uid://dttplpdn2qvpn" path="res://assets/models/fence_corner.glb" id="1_f5b4c"]
+
+[node name="FenceCorner" unique_id=2075459873 instance=ExtResource("1_f5b4c")]
+
+[node name="fence_corner__hull" parent="fence_corner" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=968850050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.15, 0, -0.15, 0.15, 0, -0.15, 0.15, 0, 0.15, -0.15, 0, 0.15)
+affect_navigation_mesh = true

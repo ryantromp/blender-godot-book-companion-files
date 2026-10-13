@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://det4eeo104326"]
+
+[ext_resource type="PackedScene" uid="uid://c7ihb8qf8g0yv" path="res://assets/models/bld_barn.glb" id="1_ivukd"]
+
+[node name="Barn" unique_id=1643412849 instance=ExtResource("1_ivukd")]
+
+[node name="bld_barn__hull" parent="bld_barn" parent_id_path=PackedInt32Array(2079627465) index="0" unique_id=496692593]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=2117960035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-4, 0, -3, 4, 0, -3, 4, 0, 3, -4, 0, 3)
+affect_navigation_mesh = true

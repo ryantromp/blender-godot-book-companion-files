@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bub8i8cw6fr3i"]
+
+[ext_resource type="PackedScene" uid="uid://calibso5no0fk" path="res://assets/models/bld_chicken_coop.glb" id="1_dba1f"]
+
+[node name="ChickenCoop" unique_id=1224567182 instance=ExtResource("1_dba1f")]
+
+[node name="bld_chicken_coop__hull" parent="bld_chicken_coop" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=717958927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, -0.35)
+height = 2.5
+vertices = PackedVector3Array(-1, 0, -0.65, 1, 0, -0.65, 1, 0, 0.65, -1, 0, 0.65)
+affect_navigation_mesh = true

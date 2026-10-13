@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ddb68grg47ee2"]
+
+[ext_resource type="PackedScene" uid="uid://bfpxpkmfgbt1" path="res://assets/models/tree_pine.glb" id="1_4119d"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_a80"]
+height = 2
+radius = 0.4
+
+[node name="TreePine" unique_id=192500819 instance=ExtResource("1_4119d")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=190775485]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=2020529344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_a80")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=1423023348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(0.3696, 0, 0.1531, 0.1531, 0, 0.3696, -0.1531, 0, 0.3696, -0.3696, 0, 0.1531, -0.3696, 0, -0.1531, -0.1531, 0, -0.3696, 0.1531, 0, -0.3696, 0.3696, 0, -0.1531)
+affect_navigation_mesh = true

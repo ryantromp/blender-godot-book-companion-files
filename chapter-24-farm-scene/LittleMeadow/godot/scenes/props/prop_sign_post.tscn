@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cdsvlp8ask7o8"]
+
+[ext_resource type="PackedScene" uid="uid://x1jriwrjdm2j" path="res://assets/models/prop_sign_post.glb" id="1_9df57"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4bb"]
+size = Vector3(0.8, 1.4, 0.1)
+
+[node name="SignPost" unique_id=1833274222 instance=ExtResource("1_9df57")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=1831548888]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=331476795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+shape = SubResource("BoxShape3D_4bb")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=1087601903]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.4, 0, -0.15, 0.4, 0, -0.15, 0.4, 0, 0.15, -0.4, 0, 0.15)
+affect_navigation_mesh = true

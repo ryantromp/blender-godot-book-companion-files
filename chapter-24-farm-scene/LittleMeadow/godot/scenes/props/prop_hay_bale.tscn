@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://muu56uebt3bm"]
+
+[ext_resource type="PackedScene" uid="uid://b8xriwhoy61bp" path="res://assets/models/prop_hay_bale.glb" id="1_bad4c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5a"]
+size = Vector3(0.9, 0.5, 0.5)
+
+[node name="HayBale" unique_id=2103443053 instance=ExtResource("1_bad4c")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=2101717719]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=657113626]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_5a")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=806922062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.45, 0, -0.25, 0.45, 0, -0.25, 0.45, 0, 0.25, -0.45, 0, 0.25)
+affect_navigation_mesh = true

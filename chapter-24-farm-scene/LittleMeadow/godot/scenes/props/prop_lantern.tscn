@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cmg4jonyv235b"]
+
+[ext_resource type="PackedScene" uid="uid://ba7jdexhbq78d" path="res://assets/models/prop_lantern.glb" id="1_edb69"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_9b9"]
+height = 0.35
+radius = 0.1
+
+[node name="Lantern" unique_id=131825452 instance=ExtResource("1_edb69")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=130100118]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=18242233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, 0)
+shape = SubResource("CylinderShape3D_9b9")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=1364031341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(0.0924, 0, 0.0383, 0.0383, 0, 0.0924, -0.0383, 0, 0.0924, -0.0924, 0, 0.0383, -0.0924, 0, -0.0383, -0.0383, 0, -0.0924, 0.0383, 0, -0.0924, 0.0924, 0, -0.0383)
+affect_navigation_mesh = true

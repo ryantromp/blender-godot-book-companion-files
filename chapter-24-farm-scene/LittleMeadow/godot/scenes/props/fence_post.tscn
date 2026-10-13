@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dswngykidyvr4"]
+
+[ext_resource type="PackedScene" uid="uid://dtkwwbnx5d067" path="res://assets/models/fence_post.glb" id="1_29ab0"]
+
+[node name="FencePost" unique_id=1005819166 instance=ExtResource("1_29ab0")]
+
+[node name="fence_post__hull" parent="fence_post" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=87757983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.15, 0, -0.15, 0.15, 0, -0.15, 0.15, 0, 0.15, -0.15, 0, 0.15)
+affect_navigation_mesh = true

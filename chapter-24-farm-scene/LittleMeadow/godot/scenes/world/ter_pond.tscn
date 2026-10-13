@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tlqpwn65cc75"]
+
+[ext_resource type="PackedScene" uid="uid://dbs741rbr2aom" path="res://assets/models/ter_pond.glb" id="1_f9243"]
+
+[node name="Pond" unique_id=2124263091 instance=ExtResource("1_f9243")]
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=783119188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6, 0)
+height = 1.2
+vertices = PackedVector3Array(1.7554, 0, 0.7271, 0.7271, 0, 1.7554, -0.7271, 0, 1.7554, -1.7554, 0, 0.7271, -1.7554, 0, -0.7271, -0.7271, 0, -1.7554, 0.7271, 0, -1.7554, 1.7554, 0, -0.7271)
+affect_navigation_mesh = true

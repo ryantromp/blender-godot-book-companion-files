@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b3jloor808qq3"]
+
+[ext_resource type="PackedScene" uid="uid://crienr0luru8t" path="res://assets/models/prop_bucket.glb" id="1_6d634"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_143"]
+height = 0.35
+radius = 0.2
+
+[node name="Bucket" unique_id=40922358 instance=ExtResource("1_6d634")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=39197024]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=1313407427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.175, 0)
+shape = SubResource("CylinderShape3D_143")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=909153143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(0.1848, 0, 0.0765, 0.0765, 0, 0.1848, -0.0765, 0, 0.1848, -0.1848, 0, 0.0765, -0.1848, 0, -0.0765, -0.0765, 0, -0.1848, 0.0765, 0, -0.1848, 0.1848, 0, -0.0765)
+affect_navigation_mesh = true

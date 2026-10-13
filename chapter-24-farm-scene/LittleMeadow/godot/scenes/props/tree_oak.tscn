@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bqxwtubnsfg8c"]
+
+[ext_resource type="PackedScene" uid="uid://dtyqcgdtluv6g" path="res://assets/models/tree_oak.glb" id="1_c3e97"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_d6f"]
+height = 2.4
+radius = 0.3
+
+[node name="TreeOak" unique_id=954148002 instance=ExtResource("1_c3e97")]
+
+[node name="Body" type="StaticBody3D" parent="." index="1" unique_id=952422668]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body" index="0" unique_id=1385082607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+shape = SubResource("CylinderShape3D_d6f")
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="2" unique_id=312538787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(0.2772, 0, 0.1148, 0.1148, 0, 0.2772, -0.1148, 0, 0.2772, -0.2772, 0, 0.1148, -0.2772, 0, -0.1148, -0.1148, 0, -0.2772, 0.1148, 0, -0.2772, 0.2772, 0, -0.1148)
+affect_navigation_mesh = true

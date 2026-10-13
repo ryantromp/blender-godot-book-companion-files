@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bubx0upt4qtur"]
+
+[ext_resource type="PackedScene" uid="uid://vq6dertreqc2" path="res://assets/models/rock_c.glb" id="1_19dbd"]
+
+[node name="RockC" unique_id=1447642441 instance=ExtResource("1_19dbd")]
+
+[node name="rock_c__hull" parent="rock_c" index="0"]
+collision_layer = 8
+
+[node name="Footprint" type="NavigationObstacle3D" parent="." index="1" unique_id=1290573738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-0.25, 0, -0.25, 0.25, 0, -0.25, 0.25, 0, 0.25, -0.25, 0, 0.25)
+affect_navigation_mesh = true
