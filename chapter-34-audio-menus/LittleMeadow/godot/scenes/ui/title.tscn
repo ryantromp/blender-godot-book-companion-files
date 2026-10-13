@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://cqgcolfxya73a"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://c7qso1eki2oqs" path="res://scripts/ui/title.gd" id="2_script"]
+[ext_resource type="Texture2D" uid="uid://5vqec8w4wx4q" path="res://assets/textures/title_bg.jpg" id="3_bg"]
+[ext_resource type="PackedScene" uid="uid://bsv33pnl7q2xk" path="res://scenes/ui/save_panel.tscn" id="4_save"]
+[ext_resource type="PackedScene" uid="uid://8swoivpseo1" path="res://scenes/ui/settings_panel.tscn" id="5_settings"]
+[ext_resource type="PackedScene" uid="uid://cd51da124pupe" path="res://scenes/ui/credits_panel.tscn" id="6_credits"]
+
+[sub_resource type="Gradient" id="Gradient_shade"]
+offsets = PackedFloat32Array(0, 0.45, 1)
+colors = PackedColorArray(0.043, 0.071, 0.055, 0.92, 0.043, 0.071, 0.055, 0.6, 0.043, 0.071, 0.055, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_shade"]
+gradient = SubResource("Gradient_shade")
+fill_from = Vector2(0, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[node name="Title" type="Control" unique_id=112328978]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1444772200]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Shade" type="TextureRect" parent="." unique_id=584016750]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_shade")
+expand_mode = 1
+
+[node name="Menu" type="VBoxContainer" parent="." unique_id=1347700086]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -270.0
+offset_right = 440.0
+offset_bottom = 270.0
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="NameLabel" type="Label" parent="Menu" unique_id=2144938562]
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+theme_override_font_sizes/font_size = 64
+text = "Little Meadow"
+
+[node name="TagLabel" type="Label" parent="Menu" unique_id=674681144]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.867, 0.89, 0.82, 1)
+text = "A small farm, a long summer."
+
+[node name="Gap" type="Control" parent="Menu" unique_id=768731659]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="NewButton" type="Button" parent="Menu" unique_id=1538953586]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 22
+text = "New Game"
+
+[node name="ContinueButton" type="Button" parent="Menu" unique_id=2009666471]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 22
+text = "Continue"
+
+[node name="LoadButton" type="Button" parent="Menu" unique_id=203074063]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 22
+text = "Load Game"
+
+[node name="SettingsButton" type="Button" parent="Menu" unique_id=990990766]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 22
+text = "Settings"
+
+[node name="CreditsButton" type="Button" parent="Menu" unique_id=1795915649]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 22
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="Menu" unique_id=1197495431]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 22
+text = "Quit"
+
+[node name="MessageLabel" type="Label" parent="Menu" unique_id=1526371832]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.604, 0.541, 1)
+autowrap_mode = 3
+
+[node name="SavePanel" parent="." unique_id=52029428 instance=ExtResource("4_save")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="SettingsPanel" parent="." unique_id=812753493 instance=ExtResource("5_settings")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="CreditsPanel" parent="." unique_id=887982024 instance=ExtResource("6_credits")]
+unique_name_in_owner = true
+layout_mode = 1

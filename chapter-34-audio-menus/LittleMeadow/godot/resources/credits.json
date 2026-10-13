@@ -1,0 +1,68 @@
+{
+	"title": "Credits",
+	"intro": "Little Meadow was made with free and open source software. Thank you to everyone who builds it.",
+	"sections": [
+		{
+			"heading": "Software used in the book",
+			"items": [
+				{
+					"name": "Blender",
+					"detail": "3D modelling, rigging, animation and rendering, version 5.2.2 LTS",
+					"license": "GPL-3.0-or-later",
+					"url": "https://www.blender.org"
+				},
+				{
+					"name": "Godot Engine",
+					"detail": "Game engine, version 4.7.2 stable",
+					"license": "MIT",
+					"url": "https://godotengine.org"
+				},
+				{
+					"name": "Git",
+					"detail": "Version control for the game project",
+					"license": "GPL-2.0-only",
+					"url": "https://git-scm.com"
+				}
+			]
+		},
+		{
+			"heading": "Fonts",
+			"items": [
+				{
+					"name": "Inter",
+					"detail": "Body text of this book",
+					"license": "SIL Open Font License 1.1",
+					"url": "https://rsms.me/inter/"
+				},
+				{
+					"name": "DejaVu Sans Mono",
+					"detail": "Code listings of this book",
+					"license": "Bitstream Vera and public domain licence",
+					"url": "https://dejavu-fonts.github.io"
+				},
+				{
+					"name": "Nunito",
+					"detail": "Text of the game's menus and HUD (variable font by Vernon Adams, Cyreal and Jacques Le Bailly)",
+					"license": "SIL Open Font License 1.1",
+					"url": "https://github.com/googlefonts/nunito"
+				}
+			]
+		},
+		{
+			"heading": "Game content",
+			"items": [
+				{
+					"name": "Little Meadow models, textures and scripts",
+					"detail": "Made by the authors for this book",
+					"license": "See the book repository"
+				},
+				{
+					"name": "Sound effects, ambience and music",
+					"detail": "26 sounds made for this book by tools/make_audio.py (numpy and scipy synthesis, ffmpeg libvorbis). No third-party samples",
+					"license": "CC0 1.0 (the authors' own work)",
+					"url": "https://creativecommons.org/publicdomain/zero/1.0/"
+				}
+			]
+		}
+	]
+}

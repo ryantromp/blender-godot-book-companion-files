@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dqylpokb5bkl7"]
+
+[ext_resource type="AudioStream" uid="uid://d1gfrgg075ft7" path="res://assets/audio/sfx_coin.wav" id="1_cc0tv"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=1833669765]
+stream = ExtResource("1_cc0tv")
+autoplay = true

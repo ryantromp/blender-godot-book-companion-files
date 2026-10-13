@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://8swoivpseo1"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://d2l537dxfqxud" path="res://scripts/ui/settings_panel.gd" id="2_script"]
+
+[node name="SettingsPanel" type="Control" unique_id=1538097269]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=1077462303]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="Window" type="PanelContainer" parent="." unique_id=1486033797]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -280.0
+offset_right = 380.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Column" type="VBoxContainer" parent="Window" unique_id=188028351]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="TitleRow" type="HBoxContainer" parent="Window/Column" unique_id=725815885]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Window/Column/TitleRow" unique_id=1534011429]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="CloseButton" type="Button" parent="Window/Column/TitleRow" unique_id=1516136754]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Close (Esc)"
+
+[node name="Volumes" type="GridContainer" parent="Window/Column" unique_id=1247033749]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 12
+columns = 3
+
+[node name="MasterLabel" type="Label" parent="Window/Column/Volumes" unique_id=373114049]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Master volume"
+
+[node name="MasterSlider" type="HSlider" parent="Window/Column/Volumes" unique_id=1370614685]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="MasterValue" type="Label" parent="Window/Column/Volumes" unique_id=847589258]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+text = "80%"
+horizontal_alignment = 2
+
+[node name="MusicLabel" type="Label" parent="Window/Column/Volumes" unique_id=2076540662]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="Window/Column/Volumes" unique_id=92592006]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="MusicValue" type="Label" parent="Window/Column/Volumes" unique_id=115341167]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+text = "80%"
+horizontal_alignment = 2
+
+[node name="SfxLabel" type="Label" parent="Window/Column/Volumes" unique_id=1156714427]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Sound effects"
+
+[node name="SfxSlider" type="HSlider" parent="Window/Column/Volumes" unique_id=1032888021]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="SfxValue" type="Label" parent="Window/Column/Volumes" unique_id=524392862]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+text = "80%"
+horizontal_alignment = 2
+
+[node name="AmbienceLabel" type="Label" parent="Window/Column/Volumes" unique_id=433763831]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+text = "Ambience"
+
+[node name="AmbienceSlider" type="HSlider" parent="Window/Column/Volumes" unique_id=1646913278]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="AmbienceValue" type="Label" parent="Window/Column/Volumes" unique_id=640098782]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+text = "80%"
+horizontal_alignment = 2
+
+[node name="MuteCheck" type="CheckButton" parent="Window/Column" unique_id=1295297433]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Mute everything"
+
+[node name="FullscreenCheck" type="CheckButton" parent="Window/Column" unique_id=258243450]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Fullscreen"
+
+[node name="FpsCheck" type="CheckButton" parent="Window/Column" unique_id=79458081]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Show frames per second"
+
+[node name="HintTitle" type="Label" parent="Window/Column" unique_id=882088055]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.949, 0.788, 0.298, 1)
+text = "Keys"
+
+[node name="HintLabel" type="Label" parent="Window/Column" unique_id=997211201]
+layout_mode = 2
+text = "Click: walk or use.   1 to 4: tools.   B: build.   I: bag.   Q and E: turn the camera.   Mouse wheel: zoom.   F5, F9, F10: quick save, quick load, save window.   Esc: pause."
+autowrap_mode = 3
+
+[node name="DefaultsButton" type="Button" parent="Window/Column" unique_id=1998265452]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+focus_mode = 0
+text = "Back to defaults"

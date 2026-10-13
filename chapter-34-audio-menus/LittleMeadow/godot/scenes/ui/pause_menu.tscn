@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://bin0ba32wqcf3"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://c8elsb7bt1w2r" path="res://scripts/ui/pause_menu.gd" id="2_script"]
+[ext_resource type="PackedScene" uid="uid://8swoivpseo1" path="res://scenes/ui/settings_panel.tscn" id="3_settings"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=689299677]
+process_mode = 3
+layer = 5
+visible = false
+script = ExtResource("2_script")
+
+[node name="Menu" type="Control" parent="." unique_id=573555607]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+
+[node name="Dim" type="ColorRect" parent="Menu" unique_id=1735869869]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Window" type="PanelContainer" parent="Menu" unique_id=531072310]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -235.0
+offset_right = 180.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Column" type="VBoxContainer" parent="Menu/Window" unique_id=297837238]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="Menu/Window/Column" unique_id=1990997807]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="Menu/Window/Column" unique_id=255248807]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+focus_mode = 0
+text = "Resume"
+
+[node name="SaveButton" type="Button" parent="Menu/Window/Column" unique_id=2081645264]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+focus_mode = 0
+text = "Save"
+
+[node name="LoadButton" type="Button" parent="Menu/Window/Column" unique_id=1078815153]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+focus_mode = 0
+text = "Load"
+
+[node name="SettingsButton" type="Button" parent="Menu/Window/Column" unique_id=1436533779]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+focus_mode = 0
+text = "Settings"
+
+[node name="TitleButton" type="Button" parent="Menu/Window/Column" unique_id=1808725783]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+focus_mode = 0
+text = "Main menu"
+
+[node name="QuitButton" type="Button" parent="Menu/Window/Column" unique_id=269228893]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+focus_mode = 0
+text = "Quit to desktop"
+
+[node name="Hint" type="Label" parent="Menu/Window/Column" unique_id=1912101294]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.486, 0.541, 0.51, 1)
+theme_override_font_sizes/font_size = 14
+text = "Esc resumes. Main menu and Quit save the autosave first."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="SettingsPanel" parent="." unique_id=563051442 instance=ExtResource("3_settings")]
+unique_name_in_owner = true

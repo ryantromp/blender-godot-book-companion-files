@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://cd51da124pupe"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://c02wg58bbomax" path="res://scripts/ui/credits_panel.gd" id="2_script"]
+
+[node name="CreditsPanel" type="Control" unique_id=210973532]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=2127670518]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="Window" type="PanelContainer" parent="." unique_id=1859466943]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -410.0
+offset_top = -280.0
+offset_right = 410.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Column" type="VBoxContainer" parent="Window" unique_id=399911592]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TitleRow" type="HBoxContainer" parent="Window/Column" unique_id=1007064294]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Window/Column/TitleRow" unique_id=1085676856]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 26
+text = "Credits"
+
+[node name="CloseButton" type="Button" parent="Window/Column/TitleRow" unique_id=2038754991]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Close (Esc)"
+
+[node name="CreditsText" type="RichTextLabel" parent="Window/Column" unique_id=1567006219]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
