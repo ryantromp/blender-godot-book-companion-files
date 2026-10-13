@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://8bfovpafto08"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_cqctx"]
+
+[resource]
+script = ExtResource("1_cqctx")
+id = &"seed_wheat"
+display_name = "Wheat seeds"
+metadata/_custom_type_script = "uid://dq6ghbmcp4kbn"

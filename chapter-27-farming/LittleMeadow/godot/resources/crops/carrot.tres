@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://1wvg22omynxf"]
+
+[ext_resource type="Resource" uid="uid://brygm2qyaiiky" path="res://resources/items/carrot.tres" id="1_2mwim"]
+[ext_resource type="Script" uid="uid://dwnmjcst6xesl" path="res://scripts/farming/crop_data.gd" id="1_lq0tg"]
+[ext_resource type="Resource" uid="uid://crs4geoyrv4vq" path="res://resources/items/seed_carrot.tres" id="3_mdeft"]
+[ext_resource type="PackedScene" uid="uid://7ty7wbpnhmc5" path="res://assets/models/crop_carrot_s0.glb" id="4_ka1kt"]
+[ext_resource type="PackedScene" uid="uid://ceh83guijafc6" path="res://assets/models/crop_carrot_s1.glb" id="5_o588x"]
+[ext_resource type="PackedScene" uid="uid://caei4et0nvbiu" path="res://assets/models/crop_carrot_s2.glb" id="6_ndcdv"]
+[ext_resource type="PackedScene" uid="uid://dfssivm73i7dv" path="res://assets/models/crop_carrot_s3.glb" id="7_wqw35"]
+
+[resource]
+script = ExtResource("1_lq0tg")
+id = &"carrot"
+display_name = "Carrot"
+stage_scenes = Array[PackedScene]([ExtResource("4_ka1kt"), ExtResource("5_o588x"), ExtResource("6_ndcdv"), ExtResource("7_wqw35")])
+seed_item = ExtResource("3_mdeft")
+harvest_item = ExtResource("1_2mwim")
+sell_price = 12
+metadata/_custom_type_script = "uid://dwnmjcst6xesl"

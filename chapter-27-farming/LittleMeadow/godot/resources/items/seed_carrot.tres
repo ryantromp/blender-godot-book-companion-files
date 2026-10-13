@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://crs4geoyrv4vq"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_dfenu"]
+
+[resource]
+script = ExtResource("1_dfenu")
+id = &"seed_carrot"
+display_name = "Carrot seeds"
+metadata/_custom_type_script = "uid://dq6ghbmcp4kbn"

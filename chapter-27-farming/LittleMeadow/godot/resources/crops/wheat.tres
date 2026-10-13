@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://cuovknanavsb5"]
+
+[ext_resource type="Script" uid="uid://dwnmjcst6xesl" path="res://scripts/farming/crop_data.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bsme4slolvwhg" path="res://assets/models/crop_wheat_s0.glb" id="2"]
+[ext_resource type="PackedScene" uid="uid://c8p14ft63t88i" path="res://assets/models/crop_wheat_s1.glb" id="3"]
+[ext_resource type="PackedScene" uid="uid://dlpia8t3aq3fr" path="res://assets/models/crop_wheat_s2.glb" id="4"]
+[ext_resource type="PackedScene" uid="uid://dj4g6jn31xa2l" path="res://assets/models/crop_wheat_s3.glb" id="5"]
+[ext_resource type="Resource" uid="uid://8bfovpafto08" path="res://resources/items/seed_wheat.tres" id="6"]
+[ext_resource type="Resource" uid="uid://dabdwatkxkwf" path="res://resources/items/wheat.tres" id="7"]
+
+[resource]
+script = ExtResource("1")
+id = &"wheat"
+display_name = "Wheat"
+stage_scenes = Array[PackedScene]([ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")])
+seed_item = ExtResource("6")
+harvest_item = ExtResource("7")
+sell_price = 9
