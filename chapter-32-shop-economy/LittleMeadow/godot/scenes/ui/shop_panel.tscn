@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://bd6eyqwdfhnpk"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://dfeg85uortpkq" path="res://scripts/ui/shop_panel.gd" id="2_script"]
+
+[node name="ShopPanel" type="Control" unique_id=1112774011]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=2032737756]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5)
+
+[node name="Window" type="PanelContainer" parent="." unique_id=739925469]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Column" type="VBoxContainer" parent="Window" unique_id=1510692864]
+layout_mode = 2
+
+[node name="TitleRow" type="HBoxContainer" parent="Window/Column" unique_id=678677010]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Window/Column/TitleRow" unique_id=1763392958]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 26
+text = "Market stall"
+
+[node name="PurseLabel" type="Label" parent="Window/Column/TitleRow" unique_id=1544096890]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100 coins"
+
+[node name="CloseButton" type="Button" parent="Window/Column/TitleRow" unique_id=926078691]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Close (Esc)"
+
+[node name="Tabs" type="TabContainer" parent="Window/Column" unique_id=406395181]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 440)
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+
+[node name="Buy" type="ScrollContainer" parent="Window/Column/Tabs" unique_id=392202426]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="BuyGrid" type="GridContainer" parent="Window/Column/Tabs/Buy" unique_id=68069831]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 8
+columns = 5
+
+[node name="Sell" type="ScrollContainer" parent="Window/Column/Tabs" unique_id=498534864]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="SellGrid" type="GridContainer" parent="Window/Column/Tabs/Sell" unique_id=378430894]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 8
+columns = 5
+
+[node name="Plans" type="ScrollContainer" parent="Window/Column/Tabs" unique_id=952691644]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="PlanGrid" type="GridContainer" parent="Window/Column/Tabs/Plans" unique_id=1199952034]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 8
+columns = 4
+
+[node name="MessageLabel" type="Label" parent="Window/Column" unique_id=750668648]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Welcome."
+
+[connection signal="pressed" from="Window/Column/TitleRow/CloseButton" to="." method="close"]

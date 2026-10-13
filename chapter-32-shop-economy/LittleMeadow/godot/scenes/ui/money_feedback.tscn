@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://c110ejt2kcj0d"]
+
+[ext_resource type="Theme" uid="uid://chlivw1acvb1h" path="res://resources/ui/hud_theme.tres" id="1_theme"]
+[ext_resource type="Script" uid="uid://bxjdey5tcbcby" path="res://scripts/ui/money_feedback.gd" id="2_script"]
+
+[node name="MoneyFeedback" type="Control" unique_id=1207820202]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_theme")
+script = ExtResource("2_script")
+
+[node name="Summary" type="PanelContainer" parent="." unique_id=1727389787]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -190.0
+offset_top = 120.0
+offset_right = 190.0
+offset_bottom = 120.0
+grow_horizontal = 2
+
+[node name="Column" type="VBoxContainer" parent="Summary" unique_id=2049457278]
+layout_mode = 2
+
+[node name="SummaryTitle" type="Label" parent="Summary/Column" unique_id=243740774]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Day 1 is over"
+horizontal_alignment = 1
+
+[node name="Totals" type="GridContainer" parent="Summary/Column" unique_id=417359936]
+layout_mode = 2
+theme_override_constants/h_separation = 40
+columns = 2
+
+[node name="EarnedName" type="Label" parent="Summary/Column/Totals" unique_id=133410507]
+layout_mode = 2
+text = "Earned"
+
+[node name="EarnedValue" type="Label" parent="Summary/Column/Totals" unique_id=2073573899]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+0"
+horizontal_alignment = 2
+
+[node name="SpentName" type="Label" parent="Summary/Column/Totals" unique_id=1227280120]
+layout_mode = 2
+text = "Spent"
+
+[node name="SpentValue" type="Label" parent="Summary/Column/Totals" unique_id=360636958]
+unique_name_in_owner = true
+layout_mode = 2
+text = "-0"
+horizontal_alignment = 2
+
+[node name="NetName" type="Label" parent="Summary/Column/Totals" unique_id=1174028040]
+layout_mode = 2
+text = "Net"
+
+[node name="NetValue" type="Label" parent="Summary/Column/Totals" unique_id=497524559]
+unique_name_in_owner = true
+layout_mode = 2
+text = "+0"
+horizontal_alignment = 2
+
+[node name="SummaryLines" type="Label" parent="Summary/Column" unique_id=1929705792]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.72, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="ContinueButton" type="Button" parent="Summary/Column" unique_id=1533057097]
+unique_name_in_owner = true
+layout_mode = 2
+focus_mode = 0
+text = "Continue"
+
+[connection signal="pressed" from="Summary/Column/ContinueButton" to="." method="_on_continue_pressed"]

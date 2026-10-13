@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bbhbse8drtcsy"]
+
+[node name="PriceBoard" type="VBoxContainer" unique_id=163909003]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Tabs" type="TabContainer" parent="." unique_id=1992608028]
+custom_minimum_size = Vector2(420, 200)
+layout_mode = 2
+current_tab = 0
+
+[node name="Buy" type="ScrollContainer" parent="Tabs" unique_id=215960720]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="BuyGrid" type="GridContainer" parent="Tabs/Buy" unique_id=1866485660]
+layout_mode = 2
+columns = 2
+
+[node name="CarrotSeed" type="Button" parent="Tabs/Buy/BuyGrid" unique_id=1066469978]
+layout_mode = 2
+text = "Carrot seed  12"
+
+[node name="Biscuit" type="Button" parent="Tabs/Buy/BuyGrid" unique_id=1391918997]
+layout_mode = 2
+text = "Dog biscuit  15"
+
+[node name="WheatSeed" type="Button" parent="Tabs/Buy/BuyGrid" unique_id=1073111126]
+layout_mode = 2
+text = "Wheat seed  8"
+
+[node name="PumpkinSeed" type="Button" parent="Tabs/Buy/BuyGrid" unique_id=2118389709]
+layout_mode = 2
+text = "Pumpkin seed  30"
+
+[node name="Sell" type="ScrollContainer" parent="Tabs" unique_id=1541491551]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="SellGrid" type="GridContainer" parent="Tabs/Sell" unique_id=202965777]
+layout_mode = 2
+columns = 2
+
+[node name="SellCarrot" type="Button" parent="Tabs/Sell/SellGrid" unique_id=1724890524]
+layout_mode = 2
+text = "Sell carrot  9"
+
+[node name="SellCarrot2" type="Button" parent="Tabs/Sell/SellGrid" unique_id=2045010630]
+layout_mode = 2
+text = "Sell egg  5"
+
+[node name="CloseButton" type="Button" parent="." unique_id=618654829]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9490196, 0.7882353, 0.29803923, 1)
+theme_override_font_sizes/font_size = 24
+text = "Close"
+
+[connection signal="pressed" from="CloseButton" to="." method="hide"]

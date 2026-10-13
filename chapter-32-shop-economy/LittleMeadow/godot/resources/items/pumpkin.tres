@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://blh4e4aecdk6"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_kkb8k"]
+
+[resource]
+script = ExtResource("1_kkb8k")
+id = &"pumpkin"
+display_name = "Pumpkin"
+color = Color(0.9490, 0.6627, 0.2314, 1)
+short_name = "Pu"
+sell_price = 35
+metadata/_custom_type_script = "uid://dq6ghbmcp4kbn"

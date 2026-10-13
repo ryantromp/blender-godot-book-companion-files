@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ShopStock" format=3 uid="uid://bn3quljldna36"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_nm8h3"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_ign8y"]
+[ext_resource type="Resource" uid="uid://crs4geoyrv4vq" path="res://resources/items/seed_carrot.tres" id="2_lvayl"]
+[ext_resource type="Script" uid="uid://daqwgke3x66as" path="res://scripts/shop/shop_stock.gd" id="3_2k2pm"]
+[ext_resource type="Resource" uid="uid://8bfovpafto08" path="res://resources/items/seed_wheat.tres" id="3_5vmeu"]
+[ext_resource type="Resource" uid="uid://b1vxcpucparij" path="res://resources/items/seed_pumpkin.tres" id="4_pi0gw"]
+[ext_resource type="Resource" uid="uid://ythoi2slexco" path="res://resources/items/grain.tres" id="5_o3rfu"]
+[ext_resource type="Resource" uid="uid://bg1n23mdeyn1q" path="res://resources/items/hay.tres" id="6_8g484"]
+[ext_resource type="Resource" uid="uid://bply14r0nurnp" path="res://resources/items/dog_biscuit.tres" id="7_pnmtx"]
+[ext_resource type="Resource" uid="uid://g3kiq7cfinpe" path="res://resources/buildables/shed.tres" id="9_hewxe"]
+[ext_resource type="Resource" uid="uid://c0uefat1eprd" path="res://resources/buildables/well.tres" id="10_c2qjq"]
+
+[resource]
+script = ExtResource("3_2k2pm")
+buy_items = Array[ExtResource("1_nm8h3")]([ExtResource("2_lvayl"), ExtResource("3_5vmeu"), ExtResource("4_pi0gw"), ExtResource("5_o3rfu"), ExtResource("6_8g484"), ExtResource("7_pnmtx")])
+plans = Array[ExtResource("2_ign8y")]([ExtResource("9_hewxe"), ExtResource("10_c2qjq")])
+metadata/_custom_type_script = "uid://daqwgke3x66as"

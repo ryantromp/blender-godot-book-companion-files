@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BuildItemData" format=3 uid="uid://c0uefat1eprd"]
+
+[ext_resource type="PackedScene" uid="uid://cge5cxs15dkx7" path="res://scenes/world/bld_well.tscn" id="1_wmkv0"]
+[ext_resource type="Script" uid="uid://cil86ymvw65fh" path="res://scripts/build/build_item_data.gd" id="2_rusck"]
+
+[resource]
+script = ExtResource("2_rusck")
+id = &"well"
+display_name = "Well"
+category = 1
+scene = ExtResource("1_wmkv0")
+cost = 40
+footprint = Vector2i(2, 2)
+color = Color(0.4862745, 0.5411765, 0.5803922, 1)
+unlocked = false
+unlock_price = 40
+short_name = "We"

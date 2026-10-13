@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/models/char_farmer.glb" id="1_keeper"]
+[ext_resource type="Script" path="res://scripts/shop/shopkeeper.gd" id="2_keeper"]
+[ext_resource type="PackedScene" path="res://assets/models/prop_crate_large.glb" id="3_crate"]
+[ext_resource type="PackedScene" path="res://assets/models/prop_sack.glb" id="4_sack"]
+[ext_resource type="PackedScene" path="res://assets/models/prop_sign_post.glb" id="5_sign"]
+[ext_resource type="PackedScene" path="res://assets/models/tool_seed_bag.glb" id="6_bag"]
+[ext_resource type="Script" path="res://scripts/shop/shop_spot.gd" id="7_spot"]
+[ext_resource type="PackedScene" path="res://assets/models/prop_bucket.glb" id="8_bucket"]
+[ext_resource type="PackedScene" path="res://assets/models/prop_hay_bale.glb" id="9_hay"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_spot"]
+size = Vector3(3.2, 2.0, 2.6)
+
+[node name="ShopStall" type="Node3D"]
+
+[node name="Keeper" parent="." instance=ExtResource("1_keeper")]
+script = ExtResource("2_keeper")
+
+[node name="Crate" parent="." instance=ExtResource("3_crate")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0, 0.6)
+
+[node name="CrateLeft" parent="." instance=ExtResource("3_crate")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.6)
+
+[node name="Bucket" parent="." instance=ExtResource("8_bucket")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.6, 0.6)
+
+[node name="Hay" parent="." instance=ExtResource("9_hay")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -0.1)
+
+[node name="Sack" parent="." instance=ExtResource("4_sack")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5)
+
+[node name="SeedBag" parent="." instance=ExtResource("6_bag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, 0.6, 0.6)
+
+[node name="Sign" parent="." instance=ExtResource("5_sign")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9, 0, 0.9)
+
+[node name="Footprint" type="NavigationObstacle3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+height = 2.5
+vertices = PackedVector3Array(-2.1, 0, -0.5, 1.7, 0, -0.5, 1.7, 0, 1.1, -2.1, 0, 1.1)
+affect_navigation_mesh = true
+
+[node name="Spot" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("7_spot")
+prompt_text = "Shop"
+interact_range = 2.4
+prompt_height = 2.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Spot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0, 0.3)
+shape = SubResource("BoxShape3D_spot")

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://v6mx2so6uf4x"]
+
+[ext_resource type="Script" uid="uid://dq6ghbmcp4kbn" path="res://scripts/core/item_data.gd" id="1_flfdt"]
+
+[resource]
+script = ExtResource("1_flfdt")
+id = &"milk"
+display_name = "Milk"
+color = Color(0.9294, 0.9490, 0.9686, 1)
+short_name = "Mk"
+sell_price = 14
+metadata/_custom_type_script = "uid://dq6ghbmcp4kbn"
