@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AnimalData" format=3 uid="uid://bqd13v1ujwlg6"]
+
+[ext_resource type="Script" uid="uid://c4c2k7tuptfhw" path="res://scripts/animals/animal_data.gd" id="1_82lx1"]
+[ext_resource type="Resource" uid="uid://ythoi2slexco" path="res://resources/items/grain.tres" id="1_wf1uq"]
+[ext_resource type="Resource" uid="uid://d84nbjurouxe" path="res://resources/items/egg.tres" id="2_ewsnr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wf1uq"]
+albedo_color = Color(0.9607843, 0.92156863, 0.8, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_2apbp"]
+material = SubResource("StandardMaterial3D_wf1uq")
+radius = 0.07
+height = 0.19
+radial_segments = 12
+rings = 6
+
+[resource]
+script = ExtResource("1_82lx1")
+id = &"chicken"
+display_name = "Chicken"
+feed_item = ExtResource("1_wf1uq")
+product = ExtResource("2_ewsnr")
+product_mesh = SubResource("SphereMesh_2apbp")
+product_offset = Vector3(0, 0, 0.35)
+wander_radius = 1.6
+speed = 0.5
+clip_speed = 0.47
+idle_seconds = Vector2(2, 5)
+eat_chance = 0.45
+eat_clip = &"peck"
+metadata/_custom_type_script = "uid://c4c2k7tuptfhw"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AnimalData" format=3 uid="uid://dydv124i3c687"]
+
+[ext_resource type="Script" uid="uid://c4c2k7tuptfhw" path="res://scripts/animals/animal_data.gd" id="1"]
+[ext_resource type="Resource" uid="uid://bply14r0nurnp" path="res://resources/items/dog_biscuit.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = &"dog"
+display_name = "Dog"
+feed_item = ExtResource("2")
+wander_radius = 3.5
+speed = 1.2
+clip_speed = 1.07
+idle_seconds = Vector2(1.5, 4)
+eat_chance = 0.0
+cheer_clip = &"bark"

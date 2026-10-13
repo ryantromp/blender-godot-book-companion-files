@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c47aankns3qm0"]
+
+[ext_resource type="PackedScene" uid="uid://bm70qpe07viny" path="res://scenes/actors/animal.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ckm2fnfmi51k7" path="res://assets/models/an_dog.glb" id="2"]
+[ext_resource type="Resource" uid="uid://dydv124i3c687" path="res://resources/animals/dog.tres" id="3"]
+
+[sub_resource type="BoxShape3D" id="spot"]
+size = Vector3(0.5, 0.7, 1)
+
+[sub_resource type="CapsuleShape3D" id="body"]
+radius = 0.25
+height = 0.6
+
+[node name="Dog" unique_id=1275479652 instance=ExtResource("1")]
+data = ExtResource("3")
+
+[node name="Spot" parent="." index="1" unique_id=108862383]
+prompt_text = "Feed dog"
+interact_range = 1.8
+prompt_height = 0.9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Spot" index="0" unique_id=164446649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)
+shape = SubResource("spot")
+
+[node name="Model" parent="." index="2" unique_id=629417289 instance=ExtResource("2")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3" unique_id=1387017817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+shape = SubResource("body")

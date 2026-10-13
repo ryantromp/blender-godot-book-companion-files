@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bm70qpe07viny"]
+
+[ext_resource type="Script" uid="uid://rm3yelwso8mt" path="res://scripts/animals/animal.gd" id="1_8011q"]
+[ext_resource type="PackedScene" uid="uid://xer225e02s5m" path="res://scenes/world/product_pickup.tscn" id="2_8sqkp"]
+[ext_resource type="Script" uid="uid://by7rgyik13y4f" path="res://scripts/animals/animal_spot.gd" id="3_4sfgc"]
+
+[node name="Animal" type="CharacterBody3D" unique_id=1891729724 groups=["animals"]]
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("1_8011q")
+pickup_scene = ExtResource("2_8sqkp")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=958832524]
+path_desired_distance = 0.3
+target_desired_distance = 0.25
+path_height_offset = 0.45
+
+[node name="Spot" type="Area3D" parent="." unique_id=108862383]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("3_4sfgc")
+action_name = "plant"

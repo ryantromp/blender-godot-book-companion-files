@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="AnimalData" format=3 uid="uid://fhaeh3bn2jiw"]
+
+[ext_resource type="Script" uid="uid://c4c2k7tuptfhw" path="res://scripts/animals/animal_data.gd" id="1"]
+[ext_resource type="Resource" uid="uid://bg1n23mdeyn1q" path="res://resources/items/hay.tres" id="2"]
+[ext_resource type="Resource" uid="uid://v6mx2so6uf4x" path="res://resources/items/milk.tres" id="3"]
+
+[sub_resource type="StandardMaterial3D" id="mat"]
+albedo_color = Color(0.93, 0.95, 0.97, 1)
+roughness = 0.6
+
+[sub_resource type="CylinderMesh" id="mesh"]
+material = SubResource("mat")
+top_radius = 0.13
+bottom_radius = 0.1
+height = 0.26
+radial_segments = 10
+rings = 1
+
+[resource]
+script = ExtResource("1")
+id = &"cow"
+display_name = "Cow"
+feed_item = ExtResource("2")
+product = ExtResource("3")
+product_mesh = SubResource("mesh")
+product_offset = Vector3(0.95, 0, 0)
+wander_radius = 1.8
+speed = 0.8
+clip_speed = 1.55
+idle_seconds = Vector2(3, 8)
+eat_seconds = Vector2(4, 8)
+eat_chance = 0.5
+eat_clip = &"graze"

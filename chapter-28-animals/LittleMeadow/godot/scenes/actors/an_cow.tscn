@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://buui8teft3ovt"]
+
+[ext_resource type="PackedScene" uid="uid://bm70qpe07viny" path="res://scenes/actors/animal.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://duh5ctginrrmu" path="res://assets/models/an_cow.glb" id="2"]
+[ext_resource type="Resource" uid="uid://fhaeh3bn2jiw" path="res://resources/animals/cow.tres" id="3"]
+
+[sub_resource type="BoxShape3D" id="spot"]
+size = Vector3(0.9, 1.6, 2.4)
+
+[sub_resource type="CapsuleShape3D" id="body"]
+height = 1.4
+
+[node name="Cow" unique_id=1416253168 instance=ExtResource("1")]
+data = ExtResource("3")
+
+[node name="Spot" parent="." index="1" unique_id=108862383]
+prompt_text = "Feed cow"
+interact_range = 2.8
+prompt_height = 1.9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Spot" index="0" unique_id=1838130082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("spot")
+
+[node name="Model" parent="." index="2" unique_id=692199847 instance=ExtResource("2")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3" unique_id=2090819026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+shape = SubResource("body")
