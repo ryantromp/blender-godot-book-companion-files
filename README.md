@@ -24,8 +24,7 @@ chapter-27-.../
 1. **Check your own work.** Compare your file with the one in the chapter folder.
 2. **Catch up.** Copy the `LittleMeadow` folder from a chapter folder into your own `LittleMeadow` folder. Do this
    chapter by chapter, in order, because later chapters build on earlier ones.
-3. **Jump to a chapter with Git.** Every chapter is one commit with a tag (`chapter-03`, `chapter-04`, and so on).
-   `git checkout chapter-27` shows the repository as it stands after that chapter's files were added.
+3. **Compare with Git.** Clone the repository and run `git diff --no-index` on your file and the one in the chapter folder. The book's chapter "Your Safety Net" shows how.
 
 ## What is not here
 
