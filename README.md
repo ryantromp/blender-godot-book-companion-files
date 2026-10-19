@@ -1,6 +1,6 @@
-# Little Meadow: companion files
+# Grow a Game: companion files
 
-The files that go with the book *Little Meadow*, a hands-on beginner course in Blender 5.2.2 LTS and Godot 4.7.2.
+The files that go with the book *Grow a Game: Blender and Godot from Scratch*, a hands-on beginner course in Blender 5.2.2 LTS and Godot 4.7.2. The game you build is called Little Meadow.
 You build low-poly farm assets in Blender, then a playable farm game in Godot with GDScript.
 
 ## What is here
@@ -47,7 +47,7 @@ Blender 5.2.2 LTS, Godot 4.7.2, GDScript. Other versions can behave differently.
 
 | Chapter | Title | Folder | Blender files | Godot files |
 |---:|---|---|---:|---:|
-| 2 | Install, Folders, First Win | [`chapter-02-install-first-win`](chapter-02-install-first-win) | 1 |  |
+| 2 | Controls and First Win | [`chapter-02-install-first-win`](chapter-02-install-first-win) | 1 |  |
 | 3 | Interface and Navigation | [`chapter-03-interface`](chapter-03-interface) | 1 |  |
 | 4 | Objects, Transforms, Precision | [`chapter-04-transforms`](chapter-04-transforms) | 1 |  |
 | 5 | Edit Mode Modelling | [`chapter-05-edit-mode`](chapter-05-edit-mode) | 1 |  |

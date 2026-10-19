@@ -1,4 +1,4 @@
-# Chapter 2: Install, Folders, First Win
+# Chapter 2: Controls and First Win
 
 Part 1: Get Ready
 
