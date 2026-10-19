@@ -83,6 +83,10 @@ Blender 5.2.2 LTS, Godot 4.7.2, GDScript. Other versions can behave differently.
 
 ## Licence
 
-[FILL IN BEFORE RELEASE: the licence for the files in this repository. Until it is filled in, nobody has permission to reuse them.]
+You can use everything here in your own games, including games you sell.
+
+- **Code** (GDScript, Python, shaders, Godot scene, resource and project files): MIT licence, see [`LICENSE`](LICENSE).
+- **Art** (`.blend`, `.glb`, `.png`, `.jpg`, `.svg`): CC BY 4.0, see [`LICENSE-ASSETS`](LICENSE-ASSETS). Credit the book when you use them.
+- **Sounds**: CC0 1.0 (public domain), no credit needed. **Font**: Nunito, SIL Open Font License 1.1. Details are in [`LICENSE-ASSETS`](LICENSE-ASSETS).
 
 The Godot licence texts and third-party notices are in the Chapter 35 folder, under `LittleMeadow/godot/packaging/`.

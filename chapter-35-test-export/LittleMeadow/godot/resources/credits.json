@@ -58,13 +58,14 @@
 			"items": [
 				{
 					"name": "Little Meadow models, textures and scripts",
-					"detail": "Made by the authors for this book. [FILL IN BEFORE RELEASE: the licence of the game models, textures and GDScript files. No licence file exists in the project yet]",
-					"license": "[FILL IN BEFORE RELEASE]"
+					"detail": "Made by the authors for this book. Copyright (c) 2026 Ryan Tromp. Models and textures are CC BY 4.0; GDScript files are MIT",
+					"license": "CC BY 4.0 (art), MIT (code)",
+					"url": "https://creativecommons.org/licenses/by/4.0/"
 				},
 				{
 					"name": "Little Meadow Blender scripts",
-					"detail": "The Python scripts of Chapters 9 to 20. [FILL IN BEFORE RELEASE: a licence that is compatible with the GPL of Blender]",
-					"license": "[FILL IN BEFORE RELEASE]"
+					"detail": "The Python scripts of Chapters 9 to 20. Copyright (c) 2026 Ryan Tromp. MIT is compatible with the GPL of Blender",
+					"license": "MIT"
 				},
 				{
 					"name": "Sound effects, ambience and music",

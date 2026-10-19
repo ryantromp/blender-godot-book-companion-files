@@ -41,4 +41,4 @@ These files sit under `LittleMeadow/godot`, the project folder of the book.
 
 ## After the book
 
-This folder also carries the last fixes made after the chapter was written: a steadier `tests/test_ch28.gd`, the standalone test runner `tests/run_tests.gd` with `tests/README.md`, the Godot licence texts and third-party notices in `packaging/`, and the refreshed `resources/credits.json`. The credits file still holds `[FILL IN BEFORE RELEASE]` placeholders for the owner of the project.
+This folder also carries the last fixes made after the chapter was written: a steadier `tests/test_ch28.gd`, the standalone test runner `tests/run_tests.gd` with `tests/README.md`, the Godot licence texts and third-party notices in `packaging/`, and the refreshed `resources/credits.json`. The credits file names the licences of the game's own files (see `LICENSE` and `LICENSE-ASSETS` at the top of this repository).
